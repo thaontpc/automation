@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-11-12T21:50:40.203814" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="/Users/thaonguyen/Documents/code/RF/automation/Testcase/TC1.robot">
+<test id="s1-t1" name="Test1" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:40.604351" level="INFO">Opening browser 'chrome' to base url 'https://www.bitfinex.com/'.</msg>
+<arg>https://www.bitfinex.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-12T21:50:40.604082" elapsed="4.211377"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-12T21:50:46.817777" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-12T21:50:44.816855" elapsed="2.001136"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:46.849857" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:46.818433" elapsed="0.031572"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:46.850889" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span' contains exact text 'Traders'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
+<arg>Traders</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:46.850479" elapsed="0.026306"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:46.877518" level="INFO">Simulating Mouse Over on element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-11-12T21:50:46.877177" elapsed="0.290653"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.191512" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.168172" elapsed="0.023507"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.192314" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a' contains exact text 'Features'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</arg>
+<arg>Features</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.192011" elapsed="0.020368"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.233144" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.212733" elapsed="0.020566"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.234033" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a' contains exact text 'Mobile app'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</arg>
+<arg>Mobile app</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.233658" elapsed="0.016925"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.273468" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.251063" elapsed="0.022549"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.274256" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a' contains exact text 'P2P Trading'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</arg>
+<arg>P2P Trading</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.273946" elapsed="0.018966"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.313903" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.293315" elapsed="0.020726"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.314679" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a' contains exact text 'Market statistics'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</arg>
+<arg>Market statistics</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.314370" elapsed="0.017472"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.352857" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.332201" elapsed="0.020797"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.353963" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a' contains exact text 'Corporate &amp; professional'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</arg>
+<arg>Corporate &amp; professional</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.353326" elapsed="0.018333"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.393097" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.372014" elapsed="0.021237"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.393914" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a' contains exact text 'Our fees'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</arg>
+<arg>Our fees</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.393594" elapsed="0.018863"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.434611" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.412835" elapsed="0.021916"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.435510" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a' contains exact text 'Security'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</arg>
+<arg>Security</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.435207" elapsed="0.018021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.474682" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.453788" elapsed="0.021034"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.475471" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a' contains exact text 'API documentation'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</arg>
+<arg>API documentation</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.475166" elapsed="0.018435"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.514094" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.493985" elapsed="0.020250"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.514880" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a' contains exact text 'Bitfinex Leaderboard'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</arg>
+<arg>Bitfinex Leaderboard</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.514565" elapsed="0.018929"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.554763" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.533859" elapsed="0.021049"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.555546" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a' contains exact text 'Competitions'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</arg>
+<arg>Competitions</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.555238" elapsed="0.017921"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.593174" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.573547" elapsed="0.019771"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.594121" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a' contains exact text 'Deposits &amp; Withdrawals'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</arg>
+<arg>Deposits &amp; Withdrawals</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.593752" elapsed="0.015840"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.630129" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.609928" elapsed="0.020338"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.630915" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a' contains exact text 'Thalex Derivatives'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</arg>
+<arg>Thalex Derivatives</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.630591" elapsed="0.017400"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.668084" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.648350" elapsed="0.019875"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.668842" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a' contains exact text 'Reporting Tool'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</arg>
+<arg>Reporting Tool</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.668541" elapsed="0.019562"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.709170" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' is displayed.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-12T21:50:47.688457" elapsed="0.020852"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-12T21:50:47.710046" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' contains exact text 'Payment Cards'.</msg>
+<msg time="2024-11-12T21:50:48.080787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-12T21:50:48.081075" level="FAIL">The text of element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' should have been 'Payment Cards' but it was 'Debit/Credit On-ramp'.</msg>
+<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</arg>
+<arg>Payment Cards</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2024-11-12T21:50:47.709705" elapsed="0.379619">The text of element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' should have been 'Payment Cards' but it was 'Debit/Credit On-ramp'.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-11-12T21:50:48.089756" elapsed="0.000061"/>
+</kw>
+<status status="FAIL" start="2024-11-12T21:50:40.602729" elapsed="7.487591">The text of element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' should have been 'Payment Cards' but it was 'Debit/Credit On-ramp'.</status>
+</test>
+<status status="FAIL" start="2024-11-12T21:50:40.205464" elapsed="7.885634"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
