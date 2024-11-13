@@ -1,230 +1,740 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-11-12T21:50:40.203814" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-11-13T22:21:25.333468" rpa="false" schemaversion="5">
 <suite id="s1" name="TC1" source="/Users/thaonguyen/Documents/code/RF/automation/Testcase/TC1.robot">
 <test id="s1-t1" name="Test1" line="8">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:40.604351" level="INFO">Opening browser 'chrome' to base url 'https://www.bitfinex.com/'.</msg>
+<kw name="New Browser" owner="Browser">
+<msg time="2024-11-13T22:21:25.572531" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/ec45e27e-ee25-4e85-8bbd-cfcaf6a1e481"}</msg>
+<msg time="2024-11-13T22:21:25.622935" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 56602</msg>
+<msg time="2024-11-13T22:21:25.623289" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '56602']</msg>
+<msg time="2024-11-13T22:21:27.948267" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/ec45e27e-ee25-4e85-8bbd-cfcaf6a1e481"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-11-13T22:21:25.571883" elapsed="2.376785"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-13T22:21:29.681533" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
+<msg time="2024-11-13T22:21:29.681679" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://www.bitfinex.com/</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-12T21:50:40.604082" elapsed="4.211377"/>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-13T22:21:27.949510" elapsed="1.732421"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-12T21:50:46.817777" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-12T21:50:44.816855" elapsed="2.001136"/>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.254643" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.254977" level="INFO">${element} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</msg>
+<var>${element}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:29.682370" elapsed="1.572656"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:46.849857" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:46.818433" elapsed="0.031572"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:31.438202" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.255366" elapsed="0.183013"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:46.850889" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span' contains exact text 'Traders'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:31.460239" level="INFO">Text: 'Traders'</msg>
+<msg time="2024-11-13T22:21:31.460461" level="INFO">${value} = Traders</msg>
+<var>${value}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.438749" elapsed="0.021762"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value}</arg>
 <arg>Traders</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:46.850479" elapsed="0.026306"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.460891" elapsed="0.000404"/>
 </kw>
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:46.877518" level="INFO">Simulating Mouse Over on element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-11-12T21:50:46.877177" elapsed="0.290653"/>
+<kw name="Hover" owner="Browser">
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.461640" elapsed="0.131332"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.191512" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.168172" elapsed="0.023507"/>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.605975" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.606290" level="INFO">${element_Features} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</msg>
+<var>${element_Features}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.593334" elapsed="0.013010"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.192314" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a' contains exact text 'Features'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</arg>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.616037" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.616349" level="INFO">${element_Mobile_app} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</msg>
+<var>${element_Mobile_app}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.606699" elapsed="0.009702"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.625543" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.625862" level="INFO">${element_P2P_Trading} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</msg>
+<var>${element_P2P_Trading}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.616945" elapsed="0.008973"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.633909" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.634215" level="INFO">${element_Market_statistics} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</msg>
+<var>${element_Market_statistics}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.626275" elapsed="0.007993"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.642886" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.643217" level="INFO">${element_Corporate_professional} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</msg>
+<var>${element_Corporate_professional}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.634616" elapsed="0.008654"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.651182" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.651502" level="INFO">${element_Our_fees} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</msg>
+<var>${element_Our_fees}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.643629" elapsed="0.007927"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.659679" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.660001" level="INFO">${element_Security} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</msg>
+<var>${element_Security}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.651989" elapsed="0.008149"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.667912" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.668231" level="INFO">${element_API_documentation} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</msg>
+<var>${element_API_documentation}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.660505" elapsed="0.007779"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.676729" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.677047" level="INFO">${element_Bitfinex_Leaderboard} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</msg>
+<var>${element_Bitfinex_Leaderboard}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.668624" elapsed="0.008479"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.687469" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.687774" level="INFO">${element_Competitions} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</msg>
+<var>${element_Competitions}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.677461" elapsed="0.010366"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.695857" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.696171" level="INFO">${element_Deposits_Withdrawals} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</msg>
+<var>${element_Deposits_Withdrawals}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.688210" elapsed="0.008012"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.704702" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.705001" level="INFO">${element_Thalex_Derivatives} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</msg>
+<var>${element_Thalex_Derivatives}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.696550" elapsed="0.008501"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.713076" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.713401" level="INFO">${element_Reporting_Tool} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</msg>
+<var>${element_Reporting_Tool}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.705388" elapsed="0.008067"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-11-13T22:21:31.722581" level="INFO">Locator found successfully.</msg>
+<msg time="2024-11-13T22:21:31.722911" level="INFO">${element_Payment_Cards} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</msg>
+<var>${element_Payment_Cards}</var>
+<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-11-13T22:21:31.713803" elapsed="0.009217"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.730976" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a at state visible</msg>
+<arg>${element_Features}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.723440" elapsed="0.007811"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.739274" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a at state visible</msg>
+<arg>${element_Mobile_app}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.731709" elapsed="0.007796"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.748229" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a at state visible</msg>
+<arg>${element_P2P_Trading}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.739888" elapsed="0.008561"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.756669" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a at state visible</msg>
+<arg>${element_Market_statistics}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.749010" elapsed="0.007900"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.765417" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a at state visible</msg>
+<arg>${element_Corporate_professional}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.757352" elapsed="0.008416"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.774541" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a at state visible</msg>
+<arg>${element_Our_fees}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.766421" elapsed="0.008362"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.836223" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a at state visible</msg>
+<arg>${element_Security}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.775156" elapsed="0.061286"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.845210" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a at state visible</msg>
+<arg>${element_API_documentation}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.836874" elapsed="0.008562"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.855378" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a at state visible</msg>
+<arg>${element_Bitfinex_Leaderboard}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.845785" elapsed="0.009817"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.871063" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a at state visible</msg>
+<arg>${element_Competitions}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.856035" elapsed="0.015245"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.878881" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a at state visible</msg>
+<arg>${element_Deposits_Withdrawals}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.871624" elapsed="0.007487"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.888883" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a at state visible</msg>
+<arg>${element_Thalex_Derivatives}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.879473" elapsed="0.009653"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.897339" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a at state visible</msg>
+<arg>${element_Reporting_Tool}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.889658" elapsed="0.007920"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-13T22:21:31.906469" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a at state visible</msg>
+<arg>${element_Payment_Cards}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.897971" elapsed="0.008743"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:31.946484" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Features}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.907785" elapsed="0.038868"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:31.968181" level="INFO">Text: 'Features'</msg>
+<msg time="2024-11-13T22:21:31.968412" level="INFO">${value_Features} = Features</msg>
+<var>${value_Features}</var>
+<arg>${element_Features}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.947019" elapsed="0.021445"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Features}</arg>
 <arg>Features</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.192011" elapsed="0.020368"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.968823" elapsed="0.000372"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.233144" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.212733" elapsed="0.020566"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.008686" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Mobile_app}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:31.969778" elapsed="0.039236"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.234033" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a' contains exact text 'Mobile app'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.032190" level="INFO">Text: 'Mobile app'</msg>
+<msg time="2024-11-13T22:21:32.032692" level="INFO">${value_Mobile_app} = Mobile app</msg>
+<var>${value_Mobile_app}</var>
+<arg>${element_Mobile_app}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.009473" elapsed="0.023318"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Mobile_app}</arg>
 <arg>Mobile app</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.233658" elapsed="0.016925"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.033378" elapsed="0.000642"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.273468" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.251063" elapsed="0.022549"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.077650" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_P2P_Trading}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.034870" elapsed="0.042963"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.274256" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a' contains exact text 'P2P Trading'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.101611" level="INFO">Text: 'P2P Trading'</msg>
+<msg time="2024-11-13T22:21:32.101916" level="INFO">${value_P2P_Trading} = P2P Trading</msg>
+<var>${value_P2P_Trading}</var>
+<arg>${element_P2P_Trading}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.078378" elapsed="0.023660"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_P2P_Trading}</arg>
 <arg>P2P Trading</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.273946" elapsed="0.018966"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.103330" elapsed="0.000825"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.313903" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.293315" elapsed="0.020726"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.142262" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Market_statistics}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.104649" elapsed="0.037800"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.314679" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a' contains exact text 'Market statistics'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.163996" level="INFO">Text: 'Market statistics'</msg>
+<msg time="2024-11-13T22:21:32.164219" level="INFO">${value_Market_statistics} = Market statistics</msg>
+<var>${value_Market_statistics}</var>
+<arg>${element_Market_statistics}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.143172" elapsed="0.021096"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Market_statistics}</arg>
 <arg>Market statistics</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.314370" elapsed="0.017472"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.164694" elapsed="0.000374"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.352857" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.332201" elapsed="0.020797"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.208897" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Corporate_professional}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.165581" elapsed="0.043495"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.353963" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a' contains exact text 'Corporate &amp; professional'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.229548" level="INFO">Text: 'Corporate &amp; professional'</msg>
+<msg time="2024-11-13T22:21:32.229776" level="INFO">${value_Corporate_professional} = Corporate &amp; professional</msg>
+<var>${value_Corporate_professional}</var>
+<arg>${element_Corporate_professional}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.209552" elapsed="0.020276"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Corporate_professional}</arg>
 <arg>Corporate &amp; professional</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.353326" elapsed="0.018333"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.230241" elapsed="0.000409"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.393097" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.372014" elapsed="0.021237"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.263719" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Our_fees}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.230964" elapsed="0.032929"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.393914" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a' contains exact text 'Our fees'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.280452" level="INFO">Text: 'Our fees'</msg>
+<msg time="2024-11-13T22:21:32.280671" level="INFO">${value_Our_fees} = Our fees</msg>
+<var>${value_Our_fees}</var>
+<arg>${element_Our_fees}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.264266" elapsed="0.016455"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Our_fees}</arg>
 <arg>Our fees</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.393594" elapsed="0.018863"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.281436" elapsed="0.000628"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.434611" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.412835" elapsed="0.021916"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.322345" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Security}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.282616" elapsed="0.039892"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.435510" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a' contains exact text 'Security'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.341012" level="INFO">Text: 'Security'</msg>
+<msg time="2024-11-13T22:21:32.341234" level="INFO">${value_Security} = Security</msg>
+<var>${value_Security}</var>
+<arg>${element_Security}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.322857" elapsed="0.018426"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Security}</arg>
 <arg>Security</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.435207" elapsed="0.018021"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.341712" elapsed="0.000460"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.474682" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.453788" elapsed="0.021034"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.391107" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_API_documentation}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.342464" elapsed="0.048811"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.475471" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a' contains exact text 'API documentation'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.411702" level="INFO">Text: 'API documentation'</msg>
+<msg time="2024-11-13T22:21:32.411929" level="INFO">${value_API_documentation} = API documentation</msg>
+<var>${value_API_documentation}</var>
+<arg>${element_API_documentation}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.391766" elapsed="0.020215"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_API_documentation}</arg>
 <arg>API documentation</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.475166" elapsed="0.018435"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.412339" elapsed="0.000362"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.514094" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.493985" elapsed="0.020250"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.445655" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Bitfinex_Leaderboard}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.412953" elapsed="0.032877"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.514880" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a' contains exact text 'Bitfinex Leaderboard'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.475624" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
+<msg time="2024-11-13T22:21:32.475881" level="INFO">${value_Bitfinex_Leaderboard} = Bitfinex Leaderboard</msg>
+<var>${value_Bitfinex_Leaderboard}</var>
+<arg>${element_Bitfinex_Leaderboard}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.446189" elapsed="0.029750"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Bitfinex_Leaderboard}</arg>
 <arg>Bitfinex Leaderboard</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.514565" elapsed="0.018929"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.476367" elapsed="0.000398"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.554763" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.533859" elapsed="0.021049"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.510399" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Competitions}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.477036" elapsed="0.033528"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.555546" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a' contains exact text 'Competitions'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.527967" level="INFO">Text: 'Competitions'</msg>
+<msg time="2024-11-13T22:21:32.528188" level="INFO">${value_Competitions} = Competitions</msg>
+<var>${value_Competitions}</var>
+<arg>${element_Competitions}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.510935" elapsed="0.017302"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Competitions}</arg>
 <arg>Competitions</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.555238" elapsed="0.017921"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.528585" elapsed="0.000358"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.593174" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.573547" elapsed="0.019771"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.562580" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Deposits_Withdrawals}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.529245" elapsed="0.033505"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.594121" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a' contains exact text 'Deposits &amp; Withdrawals'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.579999" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
+<msg time="2024-11-13T22:21:32.580227" level="INFO">${value_Deposits_Withdrawals} = Deposits &amp; Withdrawals</msg>
+<var>${value_Deposits_Withdrawals}</var>
+<arg>${element_Deposits_Withdrawals}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.563196" elapsed="0.017083"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Deposits_Withdrawals}</arg>
 <arg>Deposits &amp; Withdrawals</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.593752" elapsed="0.015840"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.580627" elapsed="0.000377"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.630129" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.609928" elapsed="0.020338"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.610580" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Thalex_Derivatives}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.581370" elapsed="0.029383"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.630915" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a' contains exact text 'Thalex Derivatives'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.628428" level="INFO">Text: 'Thalex Derivatives'</msg>
+<msg time="2024-11-13T22:21:32.628649" level="INFO">${value_Thalex_Derivatives} = Thalex Derivatives</msg>
+<var>${value_Thalex_Derivatives}</var>
+<arg>${element_Thalex_Derivatives}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.611143" elapsed="0.017556"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Thalex_Derivatives}</arg>
 <arg>Thalex Derivatives</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.630591" elapsed="0.017400"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.629046" elapsed="0.000364"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.668084" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.648350" elapsed="0.019875"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.660845" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Reporting_Tool}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.629669" elapsed="0.031350"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.668842" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a' contains exact text 'Reporting Tool'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.681686" level="INFO">Text: 'Reporting Tool'</msg>
+<msg time="2024-11-13T22:21:32.681910" level="INFO">${value_Reporting_Tool} = Reporting Tool</msg>
+<var>${value_Reporting_Tool}</var>
+<arg>${element_Reporting_Tool}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.661390" elapsed="0.020570"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${value_Reporting_Tool}</arg>
 <arg>Reporting Tool</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.668541" elapsed="0.019562"/>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.682431" elapsed="0.000394"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.709170" level="INFO">Element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' is displayed.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-12T21:50:47.688457" elapsed="0.020852"/>
+<kw name="Get Element States" owner="Browser">
+<msg time="2024-11-13T22:21:32.721284" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>${element_Payment_Cards}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.683174" elapsed="0.038280"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-11-12T21:50:47.710046" level="INFO">Verifying element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' contains exact text 'Payment Cards'.</msg>
-<msg time="2024-11-12T21:50:48.080787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-12T21:50:48.081075" level="FAIL">The text of element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' should have been 'Payment Cards' but it was 'Debit/Credit On-ramp'.</msg>
-<arg>//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-13T22:21:32.741373" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
+<msg time="2024-11-13T22:21:32.742152" level="INFO">${value_Payment_Cards} = Debit/Credit On-ramp</msg>
+<var>${value_Payment_Cards}</var>
+<arg>${element_Payment_Cards}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-13T22:21:32.721809" elapsed="0.020428"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2024-11-13T22:21:32.743294" level="FAIL">Debit/Credit On-ramp != Payment Cards</msg>
+<arg>${value_Payment_Cards}</arg>
 <arg>Payment Cards</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="FAIL" start="2024-11-12T21:50:47.709705" elapsed="0.379619">The text of element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' should have been 'Payment Cards' but it was 'Debit/Credit On-ramp'.</status>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="FAIL" start="2024-11-13T22:21:32.742669" elapsed="0.000774">Debit/Credit On-ramp != Payment Cards</status>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-11-12T21:50:48.089756" elapsed="0.000061"/>
+<status status="NOT RUN" start="2024-11-13T22:21:32.743740" elapsed="0.000062"/>
 </kw>
-<status status="FAIL" start="2024-11-12T21:50:40.602729" elapsed="7.487591">The text of element '//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a' should have been 'Payment Cards' but it was 'Debit/Credit On-ramp'.</status>
+<status status="FAIL" start="2024-11-13T22:21:25.570851" elapsed="7.173270">Debit/Credit On-ramp != Payment Cards</status>
 </test>
-<status status="FAIL" start="2024-11-12T21:50:40.205464" elapsed="7.885634"/>
+<status status="FAIL" start="2024-11-13T22:21:25.334727" elapsed="7.536218"/>
 </suite>
 <statistics>
 <total>
