@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-11-13T22:21:25.333468" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-12-02T22:04:55.093413" rpa="false" schemaversion="5">
 <suite id="s1" name="TC1" source="/Users/thaonguyen/Documents/code/RF/automation/Testcase/TC1.robot">
 <test id="s1-t1" name="Test1" line="8">
-<kw name="New Browser" owner="Browser">
-<msg time="2024-11-13T22:21:25.572531" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/ec45e27e-ee25-4e85-8bbd-cfcaf6a1e481"}</msg>
-<msg time="2024-11-13T22:21:25.622935" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 56602</msg>
-<msg time="2024-11-13T22:21:25.623289" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '56602']</msg>
-<msg time="2024-11-13T22:21:27.948267" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/ec45e27e-ee25-4e85-8bbd-cfcaf6a1e481"}</msg>
-<arg>headless=False</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-11-13T22:21:25.571883" elapsed="2.376785"/>
-</kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-11-13T22:21:29.681533" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
-<msg time="2024-11-13T22:21:29.681679" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-12-02T22:04:55.282658" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 50280</msg>
+<msg time="2024-12-02T22:04:55.283034" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '50280']</msg>
+<msg time="2024-12-02T22:05:00.158298" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
+<msg time="2024-12-02T22:05:00.158484" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
 <arg>https://www.bitfinex.com/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-11-13T22:21:27.949510" elapsed="1.732421"/>
+<status status="PASS" start="2024-12-02T22:04:55.237555" elapsed="4.921266"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.254643" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.254977" level="INFO">${element} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</msg>
+<msg time="2024-12-02T22:05:00.278228" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.278904" level="INFO">${element} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</msg>
 <var>${element}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:29.682370" elapsed="1.572656"/>
+<status status="PASS" start="2024-12-02T22:05:00.159520" elapsed="0.119535"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:31.438202" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-02T22:05:00.333908" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${element}</arg>
 <arg>contains</arg>
 <arg>visible</arg>
@@ -41,700 +32,448 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.255366" elapsed="0.183013"/>
+<status status="PASS" start="2024-12-02T22:05:00.279514" elapsed="0.054573"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:31.460239" level="INFO">Text: 'Traders'</msg>
-<msg time="2024-11-13T22:21:31.460461" level="INFO">${value} = Traders</msg>
+<msg time="2024-12-02T22:05:00.362705" level="INFO">Text: 'Traders'</msg>
+<msg time="2024-12-02T22:05:00.362925" level="INFO">${value} = Traders</msg>
 <var>${value}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.438749" elapsed="0.021762"/>
+<status status="PASS" start="2024-12-02T22:05:00.334438" elapsed="0.028538"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${value}</arg>
 <arg>Traders</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.460891" elapsed="0.000404"/>
+<status status="PASS" start="2024-12-02T22:05:00.363361" elapsed="0.000426"/>
 </kw>
 <kw name="Hover" owner="Browser">
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div/span</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.461640" elapsed="0.131332"/>
+<status status="PASS" start="2024-12-02T22:05:00.364044" elapsed="0.158777"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.605975" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.606290" level="INFO">${element_Features} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</msg>
+<msg time="2024-12-02T22:05:00.530849" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.531157" level="INFO">${element_Features} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</msg>
 <var>${element_Features}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.593334" elapsed="0.013010"/>
+<status status="PASS" start="2024-12-02T22:05:00.523189" elapsed="0.008021"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.616037" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.616349" level="INFO">${element_Mobile_app} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</msg>
+<msg time="2024-12-02T22:05:00.538721" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.539019" level="INFO">${element_Mobile_app} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</msg>
 <var>${element_Mobile_app}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.606699" elapsed="0.009702"/>
+<status status="PASS" start="2024-12-02T22:05:00.531541" elapsed="0.007529"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.625543" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.625862" level="INFO">${element_P2P_Trading} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</msg>
+<msg time="2024-12-02T22:05:00.547435" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.547738" level="INFO">${element_P2P_Trading} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</msg>
 <var>${element_P2P_Trading}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.616945" elapsed="0.008973"/>
+<status status="PASS" start="2024-12-02T22:05:00.539401" elapsed="0.008390"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.633909" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.634215" level="INFO">${element_Market_statistics} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</msg>
+<msg time="2024-12-02T22:05:00.555194" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.555721" level="INFO">${element_Market_statistics} = xpath=//a[normalize-space()='Market statistics']</msg>
 <var>${element_Market_statistics}</var>
-<arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a</arg>
+<arg>xpath=//a[normalize-space()='Market statistics']</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.626275" elapsed="0.007993"/>
+<status status="PASS" start="2024-12-02T22:05:00.548162" elapsed="0.007634"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.642886" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.643217" level="INFO">${element_Corporate_professional} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</msg>
+<msg time="2024-12-02T22:05:00.565354" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.565668" level="INFO">${element_Corporate_professional} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</msg>
 <var>${element_Corporate_professional}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.634616" elapsed="0.008654"/>
+<status status="PASS" start="2024-12-02T22:05:00.556193" elapsed="0.009530"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.651182" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.651502" level="INFO">${element_Our_fees} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</msg>
+<msg time="2024-12-02T22:05:00.574834" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.575145" level="INFO">${element_Our_fees} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</msg>
 <var>${element_Our_fees}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.643629" elapsed="0.007927"/>
+<status status="PASS" start="2024-12-02T22:05:00.566078" elapsed="0.009120"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.659679" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.660001" level="INFO">${element_Security} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</msg>
+<msg time="2024-12-02T22:05:00.585216" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.585506" level="INFO">${element_Security} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</msg>
 <var>${element_Security}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.651989" elapsed="0.008149"/>
+<status status="PASS" start="2024-12-02T22:05:00.575772" elapsed="0.009784"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.667912" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.668231" level="INFO">${element_API_documentation} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</msg>
+<msg time="2024-12-02T22:05:00.595312" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.595673" level="INFO">${element_API_documentation} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</msg>
 <var>${element_API_documentation}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.660505" elapsed="0.007779"/>
+<status status="PASS" start="2024-12-02T22:05:00.585892" elapsed="0.009848"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.676729" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.677047" level="INFO">${element_Bitfinex_Leaderboard} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</msg>
+<msg time="2024-12-02T22:05:00.603452" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.603769" level="INFO">${element_Bitfinex_Leaderboard} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</msg>
 <var>${element_Bitfinex_Leaderboard}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.668624" elapsed="0.008479"/>
+<status status="PASS" start="2024-12-02T22:05:00.596168" elapsed="0.007657"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.687469" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.687774" level="INFO">${element_Competitions} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</msg>
+<msg time="2024-12-02T22:05:00.614318" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.614615" level="INFO">${element_Competitions} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</msg>
 <var>${element_Competitions}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.677461" elapsed="0.010366"/>
+<status status="PASS" start="2024-12-02T22:05:00.604171" elapsed="0.010496"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.695857" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.696171" level="INFO">${element_Deposits_Withdrawals} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</msg>
+<msg time="2024-12-02T22:05:00.622565" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.622927" level="INFO">${element_Deposits_Withdrawals} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</msg>
 <var>${element_Deposits_Withdrawals}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.688210" elapsed="0.008012"/>
+<status status="PASS" start="2024-12-02T22:05:00.615006" elapsed="0.007979"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.704702" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.705001" level="INFO">${element_Thalex_Derivatives} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</msg>
+<msg time="2024-12-02T22:05:00.631595" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.631908" level="INFO">${element_Thalex_Derivatives} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</msg>
 <var>${element_Thalex_Derivatives}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.696550" elapsed="0.008501"/>
+<status status="PASS" start="2024-12-02T22:05:00.623606" elapsed="0.008356"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.713076" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.713401" level="INFO">${element_Reporting_Tool} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</msg>
+<msg time="2024-12-02T22:05:00.639377" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.639704" level="INFO">${element_Reporting_Tool} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</msg>
 <var>${element_Reporting_Tool}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.705388" elapsed="0.008067"/>
+<status status="PASS" start="2024-12-02T22:05:00.632311" elapsed="0.007451"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2024-11-13T22:21:31.722581" level="INFO">Locator found successfully.</msg>
-<msg time="2024-11-13T22:21:31.722911" level="INFO">${element_Payment_Cards} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</msg>
+<msg time="2024-12-02T22:05:00.648227" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-02T22:05:00.648540" level="INFO">${element_Payment_Cards} = xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</msg>
 <var>${element_Payment_Cards}</var>
 <arg>xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2024-11-13T22:21:31.713803" elapsed="0.009217"/>
+<status status="PASS" start="2024-12-02T22:05:00.640207" elapsed="0.008391"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.730976" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.656286" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[1]/a at state visible</msg>
 <arg>${element_Features}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.723440" elapsed="0.007811"/>
+<status status="PASS" start="2024-12-02T22:05:00.648956" elapsed="0.007559"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.739274" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.665006" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[2]/a at state visible</msg>
 <arg>${element_Mobile_app}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.731709" elapsed="0.007796"/>
+<status status="PASS" start="2024-12-02T22:05:00.657112" elapsed="0.008122"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.748229" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.672646" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[3]/a at state visible</msg>
 <arg>${element_P2P_Trading}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.739888" elapsed="0.008561"/>
+<status status="PASS" start="2024-12-02T22:05:00.665592" elapsed="0.007291"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.756669" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[4]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.680339" level="INFO">Waited for Element with selector xpath=//a[normalize-space()='Market statistics'] at state visible</msg>
 <arg>${element_Market_statistics}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.749010" elapsed="0.007900"/>
+<status status="PASS" start="2024-12-02T22:05:00.673246" elapsed="0.007314"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.765417" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.687877" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[5]/a at state visible</msg>
 <arg>${element_Corporate_professional}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.757352" elapsed="0.008416"/>
+<status status="PASS" start="2024-12-02T22:05:00.680914" elapsed="0.007183"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.774541" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.696894" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[6]/a at state visible</msg>
 <arg>${element_Our_fees}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.766421" elapsed="0.008362"/>
+<status status="PASS" start="2024-12-02T22:05:00.688605" elapsed="0.008514"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.836223" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.704466" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[7]/a at state visible</msg>
 <arg>${element_Security}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.775156" elapsed="0.061286"/>
+<status status="PASS" start="2024-12-02T22:05:00.697472" elapsed="0.007229"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.845210" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.714124" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[8]/a at state visible</msg>
 <arg>${element_API_documentation}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.836874" elapsed="0.008562"/>
+<status status="PASS" start="2024-12-02T22:05:00.705174" elapsed="0.009208"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.855378" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.722057" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[9]/a at state visible</msg>
 <arg>${element_Bitfinex_Leaderboard}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.845785" elapsed="0.009817"/>
+<status status="PASS" start="2024-12-02T22:05:00.714747" elapsed="0.007826"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.871063" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.732103" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[10]/a at state visible</msg>
 <arg>${element_Competitions}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.856035" elapsed="0.015245"/>
+<status status="PASS" start="2024-12-02T22:05:00.723131" elapsed="0.009197"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.878881" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.740062" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[11]/a at state visible</msg>
 <arg>${element_Deposits_Withdrawals}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.871624" elapsed="0.007487"/>
+<status status="PASS" start="2024-12-02T22:05:00.732696" elapsed="0.007602"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.888883" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.748837" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[13]/a at state visible</msg>
 <arg>${element_Thalex_Derivatives}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.879473" elapsed="0.009653"/>
+<status status="PASS" start="2024-12-02T22:05:00.740769" elapsed="0.008286"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.897339" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.757023" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[14]/a at state visible</msg>
 <arg>${element_Reporting_Tool}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.889658" elapsed="0.007920"/>
+<status status="PASS" start="2024-12-02T22:05:00.749410" elapsed="0.007958"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-11-13T22:21:31.906469" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a at state visible</msg>
+<msg time="2024-12-02T22:05:00.765942" level="INFO">Waited for Element with selector xpath=//*[@id="header"]/div/div/ul[1]/li[1]/span/div[2]/div/ul/li[12]/a at state visible</msg>
 <arg>${element_Payment_Cards}</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.897971" elapsed="0.008743"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:31.946484" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Features}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.907785" elapsed="0.038868"/>
+<status status="PASS" start="2024-12-02T22:05:00.757798" elapsed="0.008381"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:31.968181" level="INFO">Text: 'Features'</msg>
-<msg time="2024-11-13T22:21:31.968412" level="INFO">${value_Features} = Features</msg>
+<msg time="2024-12-02T22:05:00.787587" level="INFO">Text: 'Features'</msg>
+<msg time="2024-12-02T22:05:00.787840" level="INFO">${value_Features} = Features</msg>
 <var>${value_Features}</var>
 <arg>${element_Features}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.947019" elapsed="0.021445"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Features}</arg>
+<arg>==</arg>
 <arg>Features</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.968823" elapsed="0.000372"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.008686" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Mobile_app}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:31.969778" elapsed="0.039236"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.032190" level="INFO">Text: 'Mobile app'</msg>
-<msg time="2024-11-13T22:21:32.032692" level="INFO">${value_Mobile_app} = Mobile app</msg>
-<var>${value_Mobile_app}</var>
-<arg>${element_Mobile_app}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.009473" elapsed="0.023318"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Mobile_app}</arg>
-<arg>Mobile app</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.033378" elapsed="0.000642"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.077650" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_P2P_Trading}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.034870" elapsed="0.042963"/>
+<status status="PASS" start="2024-12-02T22:05:00.766552" elapsed="0.021339"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.101611" level="INFO">Text: 'P2P Trading'</msg>
-<msg time="2024-11-13T22:21:32.101916" level="INFO">${value_P2P_Trading} = P2P Trading</msg>
-<var>${value_P2P_Trading}</var>
-<arg>${element_P2P_Trading}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.078378" elapsed="0.023660"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_P2P_Trading}</arg>
-<arg>P2P Trading</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.103330" elapsed="0.000825"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.142262" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Market_statistics}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.104649" elapsed="0.037800"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.163996" level="INFO">Text: 'Market statistics'</msg>
-<msg time="2024-11-13T22:21:32.164219" level="INFO">${value_Market_statistics} = Market statistics</msg>
-<var>${value_Market_statistics}</var>
-<arg>${element_Market_statistics}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.143172" elapsed="0.021096"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Market_statistics}</arg>
-<arg>Market statistics</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.164694" elapsed="0.000374"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.208897" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Corporate_professional}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.165581" elapsed="0.043495"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.229548" level="INFO">Text: 'Corporate &amp; professional'</msg>
-<msg time="2024-11-13T22:21:32.229776" level="INFO">${value_Corporate_professional} = Corporate &amp; professional</msg>
-<var>${value_Corporate_professional}</var>
-<arg>${element_Corporate_professional}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.209552" elapsed="0.020276"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Corporate_professional}</arg>
-<arg>Corporate &amp; professional</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.230241" elapsed="0.000409"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.263719" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Our_fees}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.230964" elapsed="0.032929"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.280452" level="INFO">Text: 'Our fees'</msg>
-<msg time="2024-11-13T22:21:32.280671" level="INFO">${value_Our_fees} = Our fees</msg>
-<var>${value_Our_fees}</var>
-<arg>${element_Our_fees}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.264266" elapsed="0.016455"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Our_fees}</arg>
-<arg>Our fees</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.281436" elapsed="0.000628"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.322345" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Security}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.282616" elapsed="0.039892"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.341012" level="INFO">Text: 'Security'</msg>
-<msg time="2024-11-13T22:21:32.341234" level="INFO">${value_Security} = Security</msg>
+<msg time="2024-12-02T22:05:00.803539" level="INFO">Text: 'Security'</msg>
+<msg time="2024-12-02T22:05:00.803787" level="INFO">${value_Security} = Security</msg>
 <var>${value_Security}</var>
 <arg>${element_Security}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.322857" elapsed="0.018426"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Security}</arg>
+<arg>==</arg>
 <arg>Security</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.341712" elapsed="0.000460"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.391107" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_API_documentation}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.342464" elapsed="0.048811"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.411702" level="INFO">Text: 'API documentation'</msg>
-<msg time="2024-11-13T22:21:32.411929" level="INFO">${value_API_documentation} = API documentation</msg>
-<var>${value_API_documentation}</var>
-<arg>${element_API_documentation}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.391766" elapsed="0.020215"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_API_documentation}</arg>
-<arg>API documentation</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.412339" elapsed="0.000362"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.445655" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Bitfinex_Leaderboard}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.412953" elapsed="0.032877"/>
+<status status="PASS" start="2024-12-02T22:05:00.788309" elapsed="0.015528"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.475624" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
-<msg time="2024-11-13T22:21:32.475881" level="INFO">${value_Bitfinex_Leaderboard} = Bitfinex Leaderboard</msg>
-<var>${value_Bitfinex_Leaderboard}</var>
-<arg>${element_Bitfinex_Leaderboard}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.446189" elapsed="0.029750"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Bitfinex_Leaderboard}</arg>
-<arg>Bitfinex Leaderboard</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.476367" elapsed="0.000398"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.510399" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Competitions}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.477036" elapsed="0.033528"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.527967" level="INFO">Text: 'Competitions'</msg>
-<msg time="2024-11-13T22:21:32.528188" level="INFO">${value_Competitions} = Competitions</msg>
+<msg time="2024-12-02T22:05:00.819766" level="INFO">Text: 'Competitions'</msg>
+<msg time="2024-12-02T22:05:00.820006" level="INFO">${value_Competitions} = Competitions</msg>
 <var>${value_Competitions}</var>
 <arg>${element_Competitions}</arg>
+<arg>==</arg>
+<arg>Competitions</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.510935" elapsed="0.017302"/>
+<status status="PASS" start="2024-12-02T22:05:00.804192" elapsed="0.015863"/>
 </kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Competitions}</arg>
-<arg>Competitions</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.528585" elapsed="0.000358"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.562580" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Deposits_Withdrawals}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-02T22:05:00.836324" level="INFO">Text: 'Mobile app'</msg>
+<msg time="2024-12-02T22:05:00.836563" level="INFO">${value_Mobile_app} = Mobile app</msg>
+<var>${value_Mobile_app}</var>
+<arg>${element_Mobile_app}</arg>
+<arg>==</arg>
+<arg>Mobile app</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.529245" elapsed="0.033505"/>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-02T22:05:00.820398" elapsed="0.016214"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.579999" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
-<msg time="2024-11-13T22:21:32.580227" level="INFO">${value_Deposits_Withdrawals} = Deposits &amp; Withdrawals</msg>
+<msg time="2024-12-02T22:05:00.856721" level="INFO">Text: 'Our fees'</msg>
+<msg time="2024-12-02T22:05:00.857054" level="INFO">${value_Our_fees} = Our fees</msg>
+<var>${value_Our_fees}</var>
+<arg>${element_Our_fees}</arg>
+<arg>==</arg>
+<arg>Our fees</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-02T22:05:00.836963" elapsed="0.020148"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-02T22:05:00.873495" level="INFO">Text: 'Corporate &amp; professional'</msg>
+<msg time="2024-12-02T22:05:00.873860" level="INFO">${value_Corporate_professional} = Corporate &amp; professional</msg>
+<var>${value_Corporate_professional}</var>
+<arg>${element_Corporate_professional}</arg>
+<arg>==</arg>
+<arg>Corporate &amp; professional</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-02T22:05:00.857490" elapsed="0.016434"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-02T22:05:00.888704" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
+<msg time="2024-12-02T22:05:00.889135" level="INFO">${value_Bitfinex_Leaderboard} = Bitfinex Leaderboard</msg>
+<var>${value_Bitfinex_Leaderboard}</var>
+<arg>${element_Bitfinex_Leaderboard}</arg>
+<arg>==</arg>
+<arg>Bitfinex Leaderboard</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-02T22:05:00.874316" elapsed="0.014940"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-02T22:05:00.903940" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
+<msg time="2024-12-02T22:05:00.904195" level="INFO">${value_Deposits_Withdrawals} = Deposits &amp; Withdrawals</msg>
 <var>${value_Deposits_Withdrawals}</var>
 <arg>${element_Deposits_Withdrawals}</arg>
+<arg>==</arg>
+<arg>Deposits &amp; Withdrawals</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.563196" elapsed="0.017083"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Deposits_Withdrawals}</arg>
-<arg>Deposits &amp; Withdrawals</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.580627" elapsed="0.000377"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.610580" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Thalex_Derivatives}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.581370" elapsed="0.029383"/>
+<status status="PASS" start="2024-12-02T22:05:00.889682" elapsed="0.014564"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.628428" level="INFO">Text: 'Thalex Derivatives'</msg>
-<msg time="2024-11-13T22:21:32.628649" level="INFO">${value_Thalex_Derivatives} = Thalex Derivatives</msg>
+<msg time="2024-12-02T22:05:00.919126" level="INFO">Text: 'Thalex Derivatives'</msg>
+<msg time="2024-12-02T22:05:00.919366" level="INFO">${value_Thalex_Derivatives} = Thalex Derivatives</msg>
 <var>${value_Thalex_Derivatives}</var>
 <arg>${element_Thalex_Derivatives}</arg>
+<arg>==</arg>
+<arg>Thalex Derivatives</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.611143" elapsed="0.017556"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Thalex_Derivatives}</arg>
-<arg>Thalex Derivatives</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.629046" elapsed="0.000364"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.660845" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Reporting_Tool}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.629669" elapsed="0.031350"/>
+<status status="PASS" start="2024-12-02T22:05:00.904599" elapsed="0.014816"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.681686" level="INFO">Text: 'Reporting Tool'</msg>
-<msg time="2024-11-13T22:21:32.681910" level="INFO">${value_Reporting_Tool} = Reporting Tool</msg>
+<msg time="2024-12-02T22:05:00.935198" level="INFO">Text: 'Reporting Tool'</msg>
+<msg time="2024-12-02T22:05:00.935436" level="INFO">${value_Reporting_Tool} = Reporting Tool</msg>
 <var>${value_Reporting_Tool}</var>
 <arg>${element_Reporting_Tool}</arg>
+<arg>==</arg>
+<arg>Reporting Tool</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.661390" elapsed="0.020570"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Reporting_Tool}</arg>
-<arg>Reporting Tool</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.682431" elapsed="0.000394"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<msg time="2024-11-13T22:21:32.721284" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<arg>${element_Payment_Cards}</arg>
-<arg>contains</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.683174" elapsed="0.038280"/>
+<status status="PASS" start="2024-12-02T22:05:00.919760" elapsed="0.015727"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-11-13T22:21:32.741373" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
-<msg time="2024-11-13T22:21:32.742152" level="INFO">${value_Payment_Cards} = Debit/Credit On-ramp</msg>
-<var>${value_Payment_Cards}</var>
-<arg>${element_Payment_Cards}</arg>
+<msg time="2024-12-02T22:05:00.936727" level="FAIL">ValueError: Argument 'assertion_operator' got value 'P2P Trading' that cannot be converted to AssertionOperator or None.</msg>
+<var>${value_P2P_Trading}</var>
+<arg>${element_P2P_Trading} ==</arg>
+<arg>P2P Trading</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-11-13T22:21:32.721809" elapsed="0.020428"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2024-11-13T22:21:32.743294" level="FAIL">Debit/Credit On-ramp != Payment Cards</msg>
-<arg>${value_Payment_Cards}</arg>
-<arg>Payment Cards</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="FAIL" start="2024-11-13T22:21:32.742669" elapsed="0.000774">Debit/Credit On-ramp != Payment Cards</status>
+<status status="FAIL" start="2024-12-02T22:05:00.935834" elapsed="0.001125">ValueError: Argument 'assertion_operator' got value 'P2P Trading' that cannot be converted to AssertionOperator or None.</status>
 </kw>
 <kw name="Close Browser" owner="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-11-13T22:21:32.743740" elapsed="0.000062"/>
+<status status="NOT RUN" start="2024-12-02T22:05:00.937238" elapsed="0.000059"/>
 </kw>
-<status status="FAIL" start="2024-11-13T22:21:25.570851" elapsed="7.173270">Debit/Credit On-ramp != Payment Cards</status>
+<status status="FAIL" start="2024-12-02T22:04:55.236504" elapsed="5.701117">ValueError: Argument 'assertion_operator' got value 'P2P Trading' that cannot be converted to AssertionOperator or None.</status>
 </test>
-<status status="FAIL" start="2024-11-13T22:21:25.334727" elapsed="7.536218"/>
+<status status="FAIL" start="2024-12-02T22:04:55.095322" elapsed="5.893633"/>
 </suite>
 <statistics>
 <total>
