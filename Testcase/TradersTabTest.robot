@@ -27,15 +27,15 @@ Test1
     ${value_P2P_Trading}=    Get Text    ${element_P2P_Trading}
     BuiltIn.Should Be Equal As Strings    ${value_P2P_Trading}    P2P Trading
   
-    ${value_Market_statistics}=    Get Text    ${element_Market_statistics}
+    ${value_Market_statistics}=     Get Text    ${element_Market_statistics}
     BuiltIn.Should Be Equal As Strings    ${value_Market_statistics}    Market statistics
-
-    ${value_Payment_Cards}=    Get Text    ${element_Payment_Cards}
-    BuiltIn.Should Be Equal As Strings    ${value_Payment_Cards}    Debit/Credit On-ramp 
-    #Payment Cards
-
+    
     ${value_API_documentation}=    Get Text    ${element_API_documentation}
     BuiltIn.Should Be Equal As Strings    ${value_API_documentation}    API documentation
+
+    ${value_Payment_Cards}=    Get Text    ${element_Payment_Cards}
+    BuiltIn.Should Be Equal As Strings    ${value_Payment_Cards}    Payment Cards
+
 
 
     Close Browser
