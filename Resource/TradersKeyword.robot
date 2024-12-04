@@ -1,9 +1,9 @@
 *** Settings ***
 Library   Browser
-Variables  ../../automation/PageObject/Locator.py
+Resource  ../../automation/PageObject/Locator.robot
 
 *** Variables ***
-${site_url}    "https://www.bitfinex.com/"
+${site_url}    https://www.bitfinex.com/
 
 *** Keywords ***
 
@@ -13,6 +13,3 @@ Open Browser
 
 Hover TradersTab
   Hover   ${traders_tab}
-
-Close Browser
-  Close All Browsers 
