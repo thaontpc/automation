@@ -1,8 +1,7 @@
 *** Settings ***
 Library   Browser
 
-Resource  ../../automation/PageObject/Locator.robot
-Resource  ../../automation/Resource/TradersKeyword.robot
+Resource  ../../automation/Keyword/Home.robot
 
 *** Test Cases ***
 
@@ -12,30 +11,22 @@ Test1
     Hover TradersTab
     
     # Check value of sub-tab
+    # giống nhau -> đưa vào 1 hàm
 
-    ${value_Features}=    Get Text    ${element_Features}   ==  Features
-    ${value_Security}=    Get Text    ${element_Security}   ==  Security
-    ${value_Competitions}=    Get Text    ${element_Competitions}   ==  Competitions
-    ${value_Mobile_app}=    Get Text    ${element_Mobile_app}   ==  Mobile app
-    ${value_Our_fees}=    Get Text    ${element_Our_fees}   ==  Our fees
-    ${value_Corporate_professional}=    Get Text    ${element_Corporate_professional}   ==  Corporate & professional
-    ${value_Bitfinex_Leaderboard}=    Get Text    ${element_Bitfinex_Leaderboard}   ==  Bitfinex Leaderboard
-    ${value_Deposits_Withdrawals}=    Get Text    ${element_Deposits_Withdrawals}   ==  Deposits & Withdrawals
-    ${value_Thalex_Derivatives}=    Get Text    ${element_Thalex_Derivatives}   ==  Thalex Derivatives
-    ${value_Reporting_Tool}=    Get Text    ${element_Reporting_Tool}   ==  Reporting Tool
+    Get Text    ${element_Features}   ==  Features
+    Get Text    ${element_Security}   ==  Security
+    Get Text    ${element_Competitions}   ==  Competitions
+    Get Text    ${element_Mobile_app}   ==  Mobile app
+    Get Text    ${element_Our_fees}   ==  Our fees
+    Get Text    ${element_Corporate_professional}   ==  Corporate & professional
+    Get Text    ${element_Bitfinex_Leaderboard}   ==  Bitfinex Leaderboard
+    Get Text    ${element_Deposits_Withdrawals}   ==  Deposits & Withdrawals
+    Get Text    ${element_Thalex_Derivatives}   ==  Thalex Derivatives
+    Get Text    ${element_Reporting_Tool}   ==  Reporting Tool
 
-    ${value_P2P_Trading}=    Get Text    ${element_P2P_Trading}
-    BuiltIn.Should Be Equal As Strings    ${value_P2P_Trading}    P2P Trading
-  
-    ${value_Market_statistics}=     Get Text    ${element_Market_statistics}
-    BuiltIn.Should Be Equal As Strings    ${value_Market_statistics}    Market statistics
-    
-    ${value_API_documentation}=    Get Text    ${element_API_documentation}
-    BuiltIn.Should Be Equal As Strings    ${value_API_documentation}    API documentation
-
-    ${value_Payment_Cards}=    Get Text    ${element_Payment_Cards}
-    BuiltIn.Should Be Equal As Strings    ${value_Payment_Cards}    Payment Cards
-
-
+    Get Text    ${element_P2P_Trading}   ==  P2P Trading
+    Get Text    ${element_Market_statistics}   ==  Market statistics
+    Get Text    ${element_API_documentation}   ==  API documentation
+    Get Text    ${element_Payment_Cards}   ==  Payment Cards
 
     Close Browser

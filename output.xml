@@ -1,44 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-12-04T23:13:21.754220" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-12-16T19:53:12.203683" rpa="false" schemaversion="5">
 <suite id="s1" name="TradersTabTest" source="/Users/thaonguyen/Documents/code/RF/automation/Testcase/TradersTabTest.robot">
-<test id="s1-t1" name="Test1" line="9">
-<kw name="Open Browser" owner="TradersKeyword">
+<test id="s1-t1" name="Test1" line="8">
+<kw name="Open Browser" owner="Home">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-12-04T23:13:21.996786" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/d7004462-8523-4fe2-8960-d5c8db1489f1"}</msg>
-<msg time="2024-12-04T23:13:22.046034" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 55840</msg>
-<msg time="2024-12-04T23:13:22.046351" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '55840']</msg>
-<msg time="2024-12-04T23:13:24.340406" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/d7004462-8523-4fe2-8960-d5c8db1489f1"}</msg>
+<msg time="2024-12-16T19:53:12.729635" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/eb10388e-15e1-4f9e-a78d-3ea548a01cc6"}</msg>
+<msg time="2024-12-16T19:53:13.267149" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 55080</msg>
+<msg time="2024-12-16T19:53:13.267388" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '55080']</msg>
+<msg time="2024-12-16T19:53:16.382808" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/eb10388e-15e1-4f9e-a78d-3ea548a01cc6"}</msg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-12-04T23:13:21.996067" elapsed="2.344713"/>
+<status status="PASS" start="2024-12-16T19:53:12.728727" elapsed="3.654432"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-12-04T23:13:28.107046" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
-<msg time="2024-12-04T23:13:28.107151" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-12-16T19:53:20.399194" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
+<msg time="2024-12-16T19:53:20.399312" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${site_url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-12-04T23:13:24.341328" elapsed="3.766036"/>
+<status status="PASS" start="2024-12-16T19:53:16.383708" elapsed="4.015888"/>
 </kw>
-<status status="PASS" start="2024-12-04T23:13:21.995203" elapsed="6.112360"/>
+<status status="PASS" start="2024-12-16T19:53:12.727693" elapsed="7.672231"/>
 </kw>
-<kw name="Hover TradersTab" owner="TradersKeyword">
+<kw name="Hover TradersTab" owner="Home">
 <kw name="Hover" owner="Browser">
 <arg>${traders_tab}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.108574" elapsed="0.235814"/>
+<status status="PASS" start="2024-12-16T19:53:20.401134" elapsed="0.196702"/>
 </kw>
-<status status="PASS" start="2024-12-04T23:13:28.108086" elapsed="0.236523"/>
+<status status="PASS" start="2024-12-16T19:53:20.400577" elapsed="0.197439"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.392807" level="INFO">Text: 'Features'</msg>
-<msg time="2024-12-04T23:13:28.393090" level="INFO">${value_Features} = Features</msg>
-<var>${value_Features}</var>
+<msg time="2024-12-16T19:53:20.634659" level="INFO">Text: 'Features'</msg>
 <arg>${element_Features}</arg>
 <arg>==</arg>
 <arg>Features</arg>
@@ -46,12 +44,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.345113" elapsed="0.048093"/>
+<status status="PASS" start="2024-12-16T19:53:20.598351" elapsed="0.036494"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.413047" level="INFO">Text: 'Security'</msg>
-<msg time="2024-12-04T23:13:28.413295" level="INFO">${value_Security} = Security</msg>
-<var>${value_Security}</var>
+<msg time="2024-12-16T19:53:20.650726" level="INFO">Text: 'Security'</msg>
 <arg>${element_Security}</arg>
 <arg>==</arg>
 <arg>Security</arg>
@@ -59,12 +55,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.393905" elapsed="0.019438"/>
+<status status="PASS" start="2024-12-16T19:53:20.635237" elapsed="0.015778"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.431942" level="INFO">Text: 'Competitions'</msg>
-<msg time="2024-12-04T23:13:28.432201" level="INFO">${value_Competitions} = Competitions</msg>
-<var>${value_Competitions}</var>
+<msg time="2024-12-16T19:53:20.666431" level="INFO">Text: 'Competitions'</msg>
 <arg>${element_Competitions}</arg>
 <arg>==</arg>
 <arg>Competitions</arg>
@@ -72,12 +66,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.413714" elapsed="0.018580"/>
+<status status="PASS" start="2024-12-16T19:53:20.651466" elapsed="0.015100"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.451834" level="INFO">Text: 'Mobile app'</msg>
-<msg time="2024-12-04T23:13:28.452090" level="INFO">${value_Mobile_app} = Mobile app</msg>
-<var>${value_Mobile_app}</var>
+<msg time="2024-12-16T19:53:20.680339" level="INFO">Text: 'Mobile app'</msg>
 <arg>${element_Mobile_app}</arg>
 <arg>==</arg>
 <arg>Mobile app</arg>
@@ -85,12 +77,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.432768" elapsed="0.019374"/>
+<status status="PASS" start="2024-12-16T19:53:20.666929" elapsed="0.013558"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.469604" level="INFO">Text: 'Our fees'</msg>
-<msg time="2024-12-04T23:13:28.469860" level="INFO">${value_Our_fees} = Our fees</msg>
-<var>${value_Our_fees}</var>
+<msg time="2024-12-16T19:53:20.699313" level="INFO">Text: 'Our fees'</msg>
 <arg>${element_Our_fees}</arg>
 <arg>==</arg>
 <arg>Our fees</arg>
@@ -98,12 +88,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.452711" elapsed="0.017200"/>
+<status status="PASS" start="2024-12-16T19:53:20.680817" elapsed="0.018646"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.487365" level="INFO">Text: 'Corporate &amp; professional'</msg>
-<msg time="2024-12-04T23:13:28.487611" level="INFO">${value_Corporate_professional} = Corporate &amp; professional</msg>
-<var>${value_Corporate_professional}</var>
+<msg time="2024-12-16T19:53:20.720711" level="INFO">Text: 'Corporate &amp; professional'</msg>
 <arg>${element_Corporate_professional}</arg>
 <arg>==</arg>
 <arg>Corporate &amp; professional</arg>
@@ -111,12 +99,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.470282" elapsed="0.017377"/>
+<status status="PASS" start="2024-12-16T19:53:20.699782" elapsed="0.021276"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.504724" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
-<msg time="2024-12-04T23:13:28.504979" level="INFO">${value_Bitfinex_Leaderboard} = Bitfinex Leaderboard</msg>
-<var>${value_Bitfinex_Leaderboard}</var>
+<msg time="2024-12-16T19:53:20.740170" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
 <arg>${element_Bitfinex_Leaderboard}</arg>
 <arg>==</arg>
 <arg>Bitfinex Leaderboard</arg>
@@ -124,12 +110,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.488019" elapsed="0.017010"/>
+<status status="PASS" start="2024-12-16T19:53:20.721633" elapsed="0.018680"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.528207" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
-<msg time="2024-12-04T23:13:28.528474" level="INFO">${value_Deposits_Withdrawals} = Deposits &amp; Withdrawals</msg>
-<var>${value_Deposits_Withdrawals}</var>
+<msg time="2024-12-16T19:53:20.758310" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
 <arg>${element_Deposits_Withdrawals}</arg>
 <arg>==</arg>
 <arg>Deposits &amp; Withdrawals</arg>
@@ -137,12 +121,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.505450" elapsed="0.023076"/>
+<status status="PASS" start="2024-12-16T19:53:20.740733" elapsed="0.017721"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.548906" level="INFO">Text: 'Thalex Derivatives'</msg>
-<msg time="2024-12-04T23:13:28.549196" level="INFO">${value_Thalex_Derivatives} = Thalex Derivatives</msg>
-<var>${value_Thalex_Derivatives}</var>
+<msg time="2024-12-16T19:53:20.781209" level="INFO">Text: 'Thalex Derivatives'</msg>
 <arg>${element_Thalex_Derivatives}</arg>
 <arg>==</arg>
 <arg>Thalex Derivatives</arg>
@@ -150,12 +132,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.528921" elapsed="0.020332"/>
+<status status="PASS" start="2024-12-16T19:53:20.758791" elapsed="0.022551"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.568305" level="INFO">Text: 'Reporting Tool'</msg>
-<msg time="2024-12-04T23:13:28.568575" level="INFO">${value_Reporting_Tool} = Reporting Tool</msg>
-<var>${value_Reporting_Tool}</var>
+<msg time="2024-12-16T19:53:20.803142" level="INFO">Text: 'Reporting Tool'</msg>
 <arg>${element_Reporting_Tool}</arg>
 <arg>==</arg>
 <arg>Reporting Tool</arg>
@@ -163,86 +143,64 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.549658" elapsed="0.018971"/>
+<status status="PASS" start="2024-12-16T19:53:20.781631" elapsed="0.021703"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.586897" level="INFO">Text: 'P2P Trading'</msg>
-<msg time="2024-12-04T23:13:28.587128" level="INFO">${value_P2P_Trading} = P2P Trading</msg>
-<var>${value_P2P_Trading}</var>
+<msg time="2024-12-16T19:53:20.835404" level="INFO">Text: 'P2P Trading'</msg>
 <arg>${element_P2P_Trading}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.569218" elapsed="0.017963"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_P2P_Trading}</arg>
+<arg>==</arg>
 <arg>P2P Trading</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.587612" elapsed="0.000421"/>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-16T19:53:20.804105" elapsed="0.031748"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.622849" level="INFO">Text: 'Market statistics'</msg>
-<msg time="2024-12-04T23:13:28.623102" level="INFO">${value_Market_statistics} = Market statistics</msg>
-<var>${value_Market_statistics}</var>
+<msg time="2024-12-16T19:53:20.880294" level="INFO">Text: 'Market statistics'</msg>
 <arg>${element_Market_statistics}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.588304" elapsed="0.034852"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_Market_statistics}</arg>
+<arg>==</arg>
 <arg>Market statistics</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.623567" elapsed="0.000405"/>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-16T19:53:20.836336" elapsed="0.044100"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.638037" level="INFO">Text: 'API documentation'</msg>
-<msg time="2024-12-04T23:13:28.638268" level="INFO">${value_API_documentation} = API documentation</msg>
-<var>${value_API_documentation}</var>
+<msg time="2024-12-16T19:53:20.897584" level="INFO">Text: 'API documentation'</msg>
 <arg>${element_API_documentation}</arg>
+<arg>==</arg>
+<arg>API documentation</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.624263" elapsed="0.014059"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${value_API_documentation}</arg>
-<arg>API documentation</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.638733" elapsed="0.000410"/>
+<status status="PASS" start="2024-12-16T19:53:20.880762" elapsed="0.017039"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-04T23:13:28.654308" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
-<msg time="2024-12-04T23:13:28.654539" level="INFO">${value_Payment_Cards} = Debit/Credit On-ramp</msg>
-<var>${value_Payment_Cards}</var>
+<msg time="2024-12-16T19:53:21.932174" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
+<msg time="2024-12-16T19:53:22.113614" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-16T19:53:22.113770" level="INFO">See also file:///Users/thaonguyen/Documents/code/RF/automation/playwright-log.txt for additional details.</msg>
+<msg time="2024-12-16T19:53:22.114350" level="FAIL">Text 'Debit/Credit On-ramp' (str) should be 'Payment Cards' (str)</msg>
 <arg>${element_Payment_Cards}</arg>
+<arg>==</arg>
+<arg>Payment Cards</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-04T23:13:28.639723" elapsed="0.014868"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2024-12-04T23:13:28.655428" level="FAIL">Debit/Credit On-ramp != Payment Cards</msg>
-<arg>${value_Payment_Cards}</arg>
-<arg>Payment Cards</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="FAIL" start="2024-12-04T23:13:28.654964" elapsed="0.000600">Debit/Credit On-ramp != Payment Cards</status>
+<status status="FAIL" start="2024-12-16T19:53:20.898254" elapsed="1.228262">Text 'Debit/Credit On-ramp' (str) should be 'Payment Cards' (str)</status>
 </kw>
 <kw name="Close Browser" owner="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-12-04T23:13:28.655847" elapsed="0.000060"/>
+<status status="NOT RUN" start="2024-12-16T19:53:22.126920" elapsed="0.000073"/>
 </kw>
-<status status="FAIL" start="2024-12-04T23:13:21.994413" elapsed="6.661823">Debit/Credit On-ramp != Payment Cards</status>
+<status status="FAIL" start="2024-12-16T19:53:12.726622" elapsed="9.400757">Text 'Debit/Credit On-ramp' (str) should be 'Payment Cards' (str)</status>
 </test>
-<status status="FAIL" start="2024-12-04T23:13:21.756121" elapsed="7.008308"/>
+<status status="FAIL" start="2024-12-16T19:53:12.205329" elapsed="10.073639"/>
 </suite>
 <statistics>
 <total>
