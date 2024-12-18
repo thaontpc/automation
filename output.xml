@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-12-16T19:53:12.203683" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-12-18T23:13:53.817240" rpa="false" schemaversion="5">
 <suite id="s1" name="TradersTabTest" source="/Users/thaonguyen/Documents/code/RF/automation/Testcase/TradersTabTest.robot">
 <test id="s1-t1" name="Test1" line="8">
 <kw name="Open Browser" owner="Home">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-12-16T19:53:12.729635" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/eb10388e-15e1-4f9e-a78d-3ea548a01cc6"}</msg>
-<msg time="2024-12-16T19:53:13.267149" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 55080</msg>
-<msg time="2024-12-16T19:53:13.267388" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '55080']</msg>
-<msg time="2024-12-16T19:53:16.382808" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/eb10388e-15e1-4f9e-a78d-3ea548a01cc6"}</msg>
+<msg time="2024-12-18T23:13:54.168682" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/ee1d39e0-4bcd-4499-9b00-cc0b10c61026"}</msg>
+<msg time="2024-12-18T23:13:54.456687" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 55064</msg>
+<msg time="2024-12-18T23:13:54.456940" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/automation/venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '55064']</msg>
+<msg time="2024-12-18T23:13:57.498497" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/ee1d39e0-4bcd-4499-9b00-cc0b10c61026"}</msg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-12-16T19:53:12.728727" elapsed="3.654432"/>
+<status status="PASS" start="2024-12-18T23:13:54.167712" elapsed="3.331173"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-12-16T19:53:20.399194" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
-<msg time="2024-12-16T19:53:20.399312" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-12-18T23:13:59.363305" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
+<msg time="2024-12-18T23:13:59.363466" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${site_url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-12-16T19:53:16.383708" elapsed="4.015888"/>
+<status status="PASS" start="2024-12-18T23:13:57.499503" elapsed="1.864301"/>
 </kw>
-<status status="PASS" start="2024-12-16T19:53:12.727693" elapsed="7.672231"/>
+<status status="PASS" start="2024-12-18T23:13:54.166724" elapsed="5.197581"/>
 </kw>
 <kw name="Hover TradersTab" owner="Home">
 <kw name="Hover" owner="Browser">
@@ -31,185 +31,623 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.401134" elapsed="0.196702"/>
+<status status="PASS" start="2024-12-18T23:13:59.366058" elapsed="1.878259"/>
 </kw>
-<status status="PASS" start="2024-12-16T19:53:20.400577" elapsed="0.197439"/>
+<status status="PASS" start="2024-12-18T23:13:59.365289" elapsed="1.879236"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-12-18T23:14:01.318289" level="INFO">Found locator('//div[contains(@class, \'header_popover_menu\')]//a').first(),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(1),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(2),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(3),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(4),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(5),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(6),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(7),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(8),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(9),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(10),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(11),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(12),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(13) Locators successfully.</msg>
+<msg time="2024-12-18T23:14:01.318744" level="INFO">${sub_tab_elements} = ["xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=0", "xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=1", "xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth...</msg>
+<var>${sub_tab_elements}</var>
+<arg>${traders_sub_tab}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:01.244833" elapsed="0.073976"/>
+</kw>
+<kw name="Click And Validate Each Sub-Tab" owner="Home">
+<for flavor="IN">
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:03.321324" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:01.320423" elapsed="2.001225"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.634659" level="INFO">Text: 'Features'</msg>
-<arg>${element_Features}</arg>
-<arg>==</arg>
-<arg>Features</arg>
+<msg time="2024-12-18T23:14:03.366217" level="INFO">Text: 'Features'</msg>
+<msg time="2024-12-18T23:14:03.366441" level="INFO">${tab_name} = Features</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.598351" elapsed="0.036494"/>
+<status status="PASS" start="2024-12-18T23:14:03.322018" elapsed="0.044472"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:03.367133" level="INFO">Testing sub-tab: Features</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:03.366789" elapsed="0.000503"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:03.367523" elapsed="0.025362"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:03.393631" level="INFO">Successfully hovered over sub-tab: Features</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:03.393297" elapsed="0.000421"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=0</var>
+<status status="PASS" start="2024-12-18T23:14:01.320242" elapsed="2.073561"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:05.395772" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:03.394215" elapsed="2.001893"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.650726" level="INFO">Text: 'Security'</msg>
-<arg>${element_Security}</arg>
-<arg>==</arg>
-<arg>Security</arg>
+<msg time="2024-12-18T23:14:05.415342" level="INFO">Text: 'Mobile app'</msg>
+<msg time="2024-12-18T23:14:05.415559" level="INFO">${tab_name} = Mobile app</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.635237" elapsed="0.015778"/>
+<status status="PASS" start="2024-12-18T23:14:05.396709" elapsed="0.018901"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:05.416175" level="INFO">Testing sub-tab: Mobile app</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:05.415897" elapsed="0.000359"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:05.416452" elapsed="0.022507"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:05.439767" level="INFO">Successfully hovered over sub-tab: Mobile app</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:05.439331" elapsed="0.000535"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=1</var>
+<status status="PASS" start="2024-12-18T23:14:03.394044" elapsed="2.045916"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:07.441141" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:05.440451" elapsed="2.000907"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.666431" level="INFO">Text: 'Competitions'</msg>
-<arg>${element_Competitions}</arg>
-<arg>==</arg>
-<arg>Competitions</arg>
+<msg time="2024-12-18T23:14:07.460395" level="INFO">Text: 'P2P Trading'</msg>
+<msg time="2024-12-18T23:14:07.460631" level="INFO">${tab_name} = P2P Trading</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.651466" elapsed="0.015100"/>
+<status status="PASS" start="2024-12-18T23:14:07.441739" elapsed="0.018941"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:07.461277" level="INFO">Testing sub-tab: P2P Trading</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:07.460984" elapsed="0.000375"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:07.461550" elapsed="0.029073"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:07.491894" level="INFO">Successfully hovered over sub-tab: P2P Trading</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:07.491287" elapsed="0.000730"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=2</var>
+<status status="PASS" start="2024-12-18T23:14:05.440272" elapsed="2.051850"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:09.494487" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:07.492711" elapsed="2.001939"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.680339" level="INFO">Text: 'Mobile app'</msg>
-<arg>${element_Mobile_app}</arg>
-<arg>==</arg>
-<arg>Mobile app</arg>
+<msg time="2024-12-18T23:14:09.680451" level="INFO">Text: 'Market statistics'</msg>
+<msg time="2024-12-18T23:14:09.680649" level="INFO">${tab_name} = Market statistics</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.666929" elapsed="0.013558"/>
+<status status="PASS" start="2024-12-18T23:14:09.494921" elapsed="0.185773"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:09.681226" level="INFO">Testing sub-tab: Market statistics</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:09.680969" elapsed="0.000331"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:09.681475" elapsed="0.023432"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:09.705671" level="INFO">Successfully hovered over sub-tab: Market statistics</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:09.705230" elapsed="0.000536"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=3</var>
+<status status="PASS" start="2024-12-18T23:14:07.492421" elapsed="2.213441"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:11.707252" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:09.706323" elapsed="2.001137"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.699313" level="INFO">Text: 'Our fees'</msg>
-<arg>${element_Our_fees}</arg>
-<arg>==</arg>
-<arg>Our fees</arg>
+<msg time="2024-12-18T23:14:11.725676" level="INFO">Text: 'Corporate &amp; professional'</msg>
+<msg time="2024-12-18T23:14:11.725884" level="INFO">${tab_name} = Corporate &amp; professional</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.680817" elapsed="0.018646"/>
+<status status="PASS" start="2024-12-18T23:14:11.707978" elapsed="0.017955"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:11.726472" level="INFO">Testing sub-tab: Corporate &amp; professional</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:11.726206" elapsed="0.000347"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:11.726743" elapsed="0.014170"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:11.741722" level="INFO">Successfully hovered over sub-tab: Corporate &amp; professional</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:11.741248" elapsed="0.000580"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=4</var>
+<status status="PASS" start="2024-12-18T23:14:09.706086" elapsed="2.035942"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:13.744425" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:11.742454" elapsed="2.002191"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.720711" level="INFO">Text: 'Corporate &amp; professional'</msg>
-<arg>${element_Corporate_professional}</arg>
-<arg>==</arg>
-<arg>Corporate &amp; professional</arg>
+<msg time="2024-12-18T23:14:13.763536" level="INFO">Text: 'Our fees'</msg>
+<msg time="2024-12-18T23:14:13.763765" level="INFO">${tab_name} = Our fees</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.699782" elapsed="0.021276"/>
+<status status="PASS" start="2024-12-18T23:14:13.745027" elapsed="0.018786"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:13.764383" level="INFO">Testing sub-tab: Our fees</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:13.764103" elapsed="0.000360"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:13.764658" elapsed="0.028114"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:13.793709" level="INFO">Successfully hovered over sub-tab: Our fees</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:13.793281" elapsed="0.000521"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=5</var>
+<status status="PASS" start="2024-12-18T23:14:11.742266" elapsed="2.051626"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:15.795958" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:13.794363" elapsed="2.001816"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.740170" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
-<arg>${element_Bitfinex_Leaderboard}</arg>
-<arg>==</arg>
-<arg>Bitfinex Leaderboard</arg>
+<msg time="2024-12-18T23:14:15.814987" level="INFO">Text: 'Security'</msg>
+<msg time="2024-12-18T23:14:15.815208" level="INFO">${tab_name} = Security</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.721633" elapsed="0.018680"/>
+<status status="PASS" start="2024-12-18T23:14:15.796564" elapsed="0.018692"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:15.815905" level="INFO">Testing sub-tab: Security</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:15.815626" elapsed="0.000359"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:15.816182" elapsed="0.026602"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:15.843639" level="INFO">Successfully hovered over sub-tab: Security</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:15.843303" elapsed="0.000425"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=6</var>
+<status status="PASS" start="2024-12-18T23:14:13.794123" elapsed="2.049694"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:17.845016" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:15.844274" elapsed="2.000968"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.758310" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
-<arg>${element_Deposits_Withdrawals}</arg>
-<arg>==</arg>
-<arg>Deposits &amp; Withdrawals</arg>
+<msg time="2024-12-18T23:14:17.864048" level="INFO">Text: 'API documentation'</msg>
+<msg time="2024-12-18T23:14:17.864281" level="INFO">${tab_name} = API documentation</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.740733" elapsed="0.017721"/>
+<status status="PASS" start="2024-12-18T23:14:17.845645" elapsed="0.018685"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:17.864906" level="INFO">Testing sub-tab: API documentation</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:17.864625" elapsed="0.000360"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:17.865178" elapsed="0.028326"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:17.894567" level="INFO">Successfully hovered over sub-tab: API documentation</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:17.893997" elapsed="0.000675"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=7</var>
+<status status="PASS" start="2024-12-18T23:14:15.844034" elapsed="2.050826"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:19.896684" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:17.895391" elapsed="2.001440"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.781209" level="INFO">Text: 'Thalex Derivatives'</msg>
-<arg>${element_Thalex_Derivatives}</arg>
-<arg>==</arg>
-<arg>Thalex Derivatives</arg>
+<msg time="2024-12-18T23:14:20.012973" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
+<msg time="2024-12-18T23:14:20.013185" level="INFO">${tab_name} = Bitfinex Leaderboard</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.758791" elapsed="0.022551"/>
+<status status="PASS" start="2024-12-18T23:14:19.897089" elapsed="0.116143"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:20.013931" level="INFO">Testing sub-tab: Bitfinex Leaderboard</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:20.013532" elapsed="0.000493"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:20.014248" elapsed="0.021700"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:20.036702" level="INFO">Successfully hovered over sub-tab: Bitfinex Leaderboard</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:20.036274" elapsed="0.000531"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=8</var>
+<status status="PASS" start="2024-12-18T23:14:17.895143" elapsed="2.141761"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:22.038312" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:20.037387" elapsed="2.001114"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.803142" level="INFO">Text: 'Reporting Tool'</msg>
-<arg>${element_Reporting_Tool}</arg>
-<arg>==</arg>
-<arg>Reporting Tool</arg>
+<msg time="2024-12-18T23:14:22.056281" level="INFO">Text: 'Competitions'</msg>
+<msg time="2024-12-18T23:14:22.056504" level="INFO">${tab_name} = Competitions</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.781631" elapsed="0.021703"/>
+<status status="PASS" start="2024-12-18T23:14:22.038835" elapsed="0.017717"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:22.057113" level="INFO">Testing sub-tab: Competitions</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:22.056834" elapsed="0.000361"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:22.057388" elapsed="0.025743"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:22.083778" level="INFO">Successfully hovered over sub-tab: Competitions</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:22.083459" elapsed="0.000409"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=9</var>
+<status status="PASS" start="2024-12-18T23:14:20.037165" elapsed="2.046878"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:24.084972" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:22.084622" elapsed="2.000516"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.835404" level="INFO">Text: 'P2P Trading'</msg>
-<arg>${element_P2P_Trading}</arg>
-<arg>==</arg>
-<arg>P2P Trading</arg>
+<msg time="2024-12-18T23:14:24.102360" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
+<msg time="2024-12-18T23:14:24.102582" level="INFO">${tab_name} = Deposits &amp; Withdrawals</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.804105" elapsed="0.031748"/>
+<status status="PASS" start="2024-12-18T23:14:24.085411" elapsed="0.017220"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:24.103178" level="INFO">Testing sub-tab: Deposits &amp; Withdrawals</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:24.102905" elapsed="0.000355"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:24.103449" elapsed="0.030840"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:24.135171" level="INFO">Successfully hovered over sub-tab: Deposits &amp; Withdrawals</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:24.134666" elapsed="0.000807"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=10</var>
+<status status="PASS" start="2024-12-18T23:14:22.084421" elapsed="2.051163"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:26.137435" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:24.136127" elapsed="2.001490"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.880294" level="INFO">Text: 'Market statistics'</msg>
-<arg>${element_Market_statistics}</arg>
-<arg>==</arg>
-<arg>Market statistics</arg>
+<msg time="2024-12-18T23:14:26.155426" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
+<msg time="2024-12-18T23:14:26.155646" level="INFO">${tab_name} = Debit/Credit On-ramp</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.836336" elapsed="0.044100"/>
+<status status="PASS" start="2024-12-18T23:14:26.137935" elapsed="0.017761"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:26.156271" level="INFO">Testing sub-tab: Debit/Credit On-ramp</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:26.155990" elapsed="0.000360"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:26.156548" elapsed="0.025459"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:26.182737" level="INFO">Successfully hovered over sub-tab: Debit/Credit On-ramp</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:26.182340" elapsed="0.000517"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=11</var>
+<status status="PASS" start="2024-12-18T23:14:24.135897" elapsed="2.047059"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:28.184069" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:26.183594" elapsed="2.000672"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:20.897584" level="INFO">Text: 'API documentation'</msg>
-<arg>${element_API_documentation}</arg>
-<arg>==</arg>
-<arg>API documentation</arg>
+<msg time="2024-12-18T23:14:28.201973" level="INFO">Text: 'Thalex Derivatives'</msg>
+<msg time="2024-12-18T23:14:28.202177" level="INFO">${tab_name} = Thalex Derivatives</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-16T19:53:20.880762" elapsed="0.017039"/>
+<status status="PASS" start="2024-12-18T23:14:28.184596" elapsed="0.017628"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:28.202783" level="INFO">Testing sub-tab: Thalex Derivatives</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:28.202502" elapsed="0.000361"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:28.203060" elapsed="0.012737"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:28.216523" level="INFO">Successfully hovered over sub-tab: Thalex Derivatives</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:28.216133" elapsed="0.000565"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=12</var>
+<status status="PASS" start="2024-12-18T23:14:26.183186" elapsed="2.033635"/>
+</iter>
+<iter>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-18T23:14:30.217642" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-18T23:14:28.217248" elapsed="2.000548"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-16T19:53:21.932174" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
-<msg time="2024-12-16T19:53:22.113614" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2024-12-16T19:53:22.113770" level="INFO">See also file:///Users/thaonguyen/Documents/code/RF/automation/playwright-log.txt for additional details.</msg>
-<msg time="2024-12-16T19:53:22.114350" level="FAIL">Text 'Debit/Credit On-ramp' (str) should be 'Payment Cards' (str)</msg>
-<arg>${element_Payment_Cards}</arg>
-<arg>==</arg>
-<arg>Payment Cards</arg>
+<msg time="2024-12-18T23:14:30.359508" level="INFO">Text: 'Reporting Tool'</msg>
+<msg time="2024-12-18T23:14:30.359773" level="INFO">${tab_name} = Reporting Tool</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="FAIL" start="2024-12-16T19:53:20.898254" elapsed="1.228262">Text 'Debit/Credit On-ramp' (str) should be 'Payment Cards' (str)</status>
+<status status="PASS" start="2024-12-18T23:14:30.218068" elapsed="0.141760"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:30.360429" level="INFO">Testing sub-tab: Reporting Tool</msg>
+<arg>Testing sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:30.360127" elapsed="0.000386"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>${element}</arg>
+<arg>force=True</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-18T23:14:30.360745" elapsed="0.020356"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T23:14:30.381915" level="INFO">Successfully hovered over sub-tab: Reporting Tool</msg>
+<arg>Successfully hovered over sub-tab: ${tab_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T23:14:30.381579" elapsed="0.000428"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=13</var>
+<status status="PASS" start="2024-12-18T23:14:28.217060" elapsed="2.165040"/>
+</iter>
+<var>${element}</var>
+<value>@{sub_tab_elements}</value>
+<status status="PASS" start="2024-12-18T23:14:01.319942" elapsed="29.062248"/>
+</for>
+<arg>${sub_tab_elements}</arg>
+<status status="PASS" start="2024-12-18T23:14:01.319363" elapsed="29.062993"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
+<msg time="2024-12-18T23:14:30.620332" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-12-16T19:53:22.126920" elapsed="0.000073"/>
+<status status="PASS" start="2024-12-18T23:14:30.382666" elapsed="0.238232"/>
 </kw>
-<status status="FAIL" start="2024-12-16T19:53:12.726622" elapsed="9.400757">Text 'Debit/Credit On-ramp' (str) should be 'Payment Cards' (str)</status>
+<status status="PASS" start="2024-12-18T23:13:54.165832" elapsed="36.455877"/>
 </test>
-<status status="FAIL" start="2024-12-16T19:53:12.205329" elapsed="10.073639"/>
+<status status="PASS" start="2024-12-18T23:13:53.818443" elapsed="36.813876"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TradersTabTest">TradersTabTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TradersTabTest">TradersTabTest</stat>
 </suite>
 </statistics>
 <errors>
