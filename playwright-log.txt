@@ -1,87 +1,95 @@
-{"level":30,"time":"2024-12-29T20:08:40.988Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Listening on 62576"}
-(node:57797) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-12-29T21:34:46.625Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Listening on 51239"}
+(node:70916) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-12-29T20:08:42.040Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-12-29T20:08:42.594Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
-{"level":30,"time":"2024-12-29T20:08:42.594Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-12-29T20:08:42.594Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-12-29T20:08:42.600Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-12-29T20:08:42.599Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-12-29T20:08:42.612Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Changed active context"}
-{"level":30,"time":"2024-12-29T20:08:43.417Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Video path: undefined"}
-{"level":30,"time":"2024-12-29T20:08:43.418Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Changed active page"}
-{"level":30,"time":"2024-12-29T20:08:44.246Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method newPage"}
-{"level":30,"time":"2024-12-29T20:08:44.252Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method hover"}
-{"level":30,"time":"2024-12-29T20:08:44.252Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//span[@class='header_item-title'][normalize-space()='Traders'] in page."}
-{"level":30,"time":"2024-12-29T20:08:45.517Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method hover"}
-{"level":30,"time":"2024-12-29T20:08:45.522Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getElements"}
-{"level":30,"time":"2024-12-29T20:08:45.522Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is disabled, return Locator: xpath=//div[contains(@class, 'header_popover_menu')]//a in page."}
-{"level":30,"time":"2024-12-29T20:08:45.522Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Wait element to reach attached state."}
-{"level":30,"time":"2024-12-29T20:08:45.533Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Found 14 elements."}
-{"level":30,"time":"2024-12-29T20:08:45.534Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getElements"}
-{"level":30,"time":"2024-12-29T20:08:45.542Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.543Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=0 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.575Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=0 containing Features"}
-{"level":30,"time":"2024-12-29T20:08:45.575Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.582Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.582Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=1 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.594Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=1 containing Mobile app"}
-{"level":30,"time":"2024-12-29T20:08:45.594Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.601Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.601Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=2 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.613Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=2 containing P2P Trading"}
-{"level":30,"time":"2024-12-29T20:08:45.613Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.620Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.620Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=3 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.631Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=3 containing Market statistics"}
-{"level":30,"time":"2024-12-29T20:08:45.631Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.639Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.639Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=4 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.651Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=4 containing Corporate & professional"}
-{"level":30,"time":"2024-12-29T20:08:45.651Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.659Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.659Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=5 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.670Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=5 containing Our fees"}
-{"level":30,"time":"2024-12-29T20:08:45.670Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.680Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.680Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=6 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.696Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=6 containing Security"}
-{"level":30,"time":"2024-12-29T20:08:45.696Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.705Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.705Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=7 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.720Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=7 containing API documentation"}
-{"level":30,"time":"2024-12-29T20:08:45.720Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.731Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.731Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=8 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.745Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=8 containing Bitfinex Leaderboard"}
-{"level":30,"time":"2024-12-29T20:08:45.746Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.755Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.755Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=9 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.765Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=9 containing Competitions"}
-{"level":30,"time":"2024-12-29T20:08:45.765Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.773Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.773Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=10 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.783Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=10 containing Deposits & Withdrawals"}
-{"level":30,"time":"2024-12-29T20:08:45.783Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.790Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.790Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=11 in page."}
-{"level":30,"time":"2024-12-29T20:08:45.800Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=11 containing Debit/Credit On-ramp"}
-{"level":30,"time":"2024-12-29T20:08:45.800Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
-{"level":30,"time":"2024-12-29T20:08:45.812Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.814Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.820Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.822Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.824Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.826Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.830Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.831Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.834Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Changed active context"}
-{"level":30,"time":"2024-12-29T20:08:45.835Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Changing current active page: page=c86f1634-be1a-4a16-a2ff-e0f696aec08b"}
-{"level":30,"time":"2024-12-29T20:08:45.835Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Changed active page"}
-{"level":30,"time":"2024-12-29T20:08:45.843Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method closeContext"}
-{"level":30,"time":"2024-12-29T20:08:45.865Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Removed page=15d39d55-627b-46b6-99e5-2780e4a5aab3 from context=5b475bc4-b629-4645-88d6-ed3bfe31511a page stack"}
-{"level":30,"time":"2024-12-29T20:08:45.886Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method closeContext"}
-{"level":30,"time":"2024-12-29T20:08:45.903Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.903Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-12-29T20:08:45.953Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-12-29T20:08:46.162Z","pid":57797,"hostname":"Cuongs-MBP.lan","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-12-29T21:34:47.730Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-29T21:34:48.674Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
+{"level":30,"time":"2024-12-29T21:34:48.675Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-29T21:34:48.675Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-29T21:34:48.680Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-29T21:34:48.680Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-29T21:34:48.702Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Changed active context"}
+{"level":30,"time":"2024-12-29T21:34:49.482Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-29T21:34:49.482Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Changed active page"}
+{"level":30,"time":"2024-12-29T21:34:50.297Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-29T21:34:50.306Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method hover"}
+{"level":30,"time":"2024-12-29T21:34:50.306Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//span[@class='header_item-title'][normalize-space()='Traders'] in page."}
+{"level":30,"time":"2024-12-29T21:34:51.839Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method hover"}
+{"level":30,"time":"2024-12-29T21:34:51.844Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-12-29T21:34:51.845Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is disabled, return Locator: xpath=//div[contains(@class, 'header_popover_menu')]//a in page."}
+{"level":30,"time":"2024-12-29T21:34:51.845Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-12-29T21:34:51.853Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Found 14 elements."}
+{"level":30,"time":"2024-12-29T21:34:51.854Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getElements"}
+{"level":30,"time":"2024-12-29T21:34:51.863Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.864Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=0 in page."}
+{"level":30,"time":"2024-12-29T21:34:51.894Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=0 containing Features"}
+{"level":30,"time":"2024-12-29T21:34:51.894Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.902Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.902Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=1 in page."}
+{"level":30,"time":"2024-12-29T21:34:51.913Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=1 containing Mobile app"}
+{"level":30,"time":"2024-12-29T21:34:51.913Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.921Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.921Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=2 in page."}
+{"level":30,"time":"2024-12-29T21:34:51.932Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=2 containing P2P Trading"}
+{"level":30,"time":"2024-12-29T21:34:51.933Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.940Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.940Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=3 in page."}
+{"level":30,"time":"2024-12-29T21:34:51.952Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=3 containing Market statistics"}
+{"level":30,"time":"2024-12-29T21:34:51.952Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.960Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.960Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=4 in page."}
+{"level":30,"time":"2024-12-29T21:34:51.978Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=4 containing Corporate & professional"}
+{"level":30,"time":"2024-12-29T21:34:51.978Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.986Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:51.986Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=5 in page."}
+{"level":30,"time":"2024-12-29T21:34:51.995Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=5 containing Our fees"}
+{"level":30,"time":"2024-12-29T21:34:51.995Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.002Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.002Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=6 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.011Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=6 containing Security"}
+{"level":30,"time":"2024-12-29T21:34:52.011Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.019Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.019Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=7 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.029Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=7 containing API documentation"}
+{"level":30,"time":"2024-12-29T21:34:52.029Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.037Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.037Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=8 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.046Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=8 containing Bitfinex Leaderboard"}
+{"level":30,"time":"2024-12-29T21:34:52.046Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.054Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.054Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=9 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.065Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=9 containing Competitions"}
+{"level":30,"time":"2024-12-29T21:34:52.065Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.072Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.072Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=10 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.082Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=10 containing Deposits & Withdrawals"}
+{"level":30,"time":"2024-12-29T21:34:52.082Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.089Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.089Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=11 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.099Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=11 containing Debit/Credit On-ramp"}
+{"level":30,"time":"2024-12-29T21:34:52.099Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.106Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.107Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=12 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.118Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=12 containing Thalex Derivatives"}
+{"level":30,"time":"2024-12-29T21:34:52.118Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.125Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.125Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=13 in page."}
+{"level":30,"time":"2024-12-29T21:34:52.136Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Retrieved text for element xpath=//div[contains(@class, 'header_popover_menu')]//a >> nth=13 containing Reporting Tool"}
+{"level":30,"time":"2024-12-29T21:34:52.136Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-29T21:34:52.149Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.151Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.154Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.156Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.158Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.159Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.163Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.166Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.168Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Changed active context"}
+{"level":30,"time":"2024-12-29T21:34:52.168Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Changing current active page: page=69ac1667-133e-45b5-af84-abdbb7c0bd19"}
+{"level":30,"time":"2024-12-29T21:34:52.168Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Changed active page"}
+{"level":30,"time":"2024-12-29T21:34:52.175Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-12-29T21:34:52.188Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Removed page=e4f1af29-b614-40d6-8539-dd96ced1af41 from context=dd194ba2-c64f-453a-b690-2a4b28e9adf2 page stack"}
+{"level":30,"time":"2024-12-29T21:34:52.210Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-12-29T21:34:52.221Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.221Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-29T21:34:52.281Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-12-29T21:34:52.482Z","pid":70916,"hostname":"Cuongs-MBP.lan","msg":"End of node method closeAllBrowsers"}

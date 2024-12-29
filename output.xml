@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-12-29T21:08:40.002842" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2024-12-29T22:34:45.410418" rpa="false" schemaversion="5">
 <suite id="s1" name="TradersTabTest" source="/Users/thaonguyen/Documents/code/RF/automation/Testcase/TradersTabTest.robot">
 <test id="s1-t1" name="Test1" line="8">
 <kw name="Open Browser 2" owner="Home">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-12-29T21:08:40.211737" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/temp/7e4f9a03-a760-4272-812c-42a694a426ba"}</msg>
-<msg time="2024-12-29T21:08:40.257049" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/robocon2024/.venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 62576</msg>
-<msg time="2024-12-29T21:08:40.257388" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/robocon2024/.venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '62576']</msg>
-<msg time="2024-12-29T21:08:42.595433" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/temp/7e4f9a03-a760-4272-812c-42a694a426ba"}</msg>
+<msg time="2024-12-29T22:34:45.679076" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/thaonguyen/Documents/code/RF/automation/browser/traces/temp/8d15e024-92f7-4a2e-8c37-676340c3381e"}</msg>
+<msg time="2024-12-29T22:34:45.834301" level="INFO">Starting Browser process /Users/thaonguyen/Documents/code/RF/robocon2024/.venv/lib/python3.9/site-packages/Browser/wrapper/index.js using port 51239</msg>
+<msg time="2024-12-29T22:34:45.834588" level="INFO">Node startup parameters: ['node', '/Users/thaonguyen/Documents/code/RF/robocon2024/.venv/lib/python3.9/site-packages/Browser/wrapper/index.js', '51239']</msg>
+<msg time="2024-12-29T22:34:48.676074" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/thaonguyen/Documents/code/RF/automation/browser/traces/temp/8d15e024-92f7-4a2e-8c37-676340c3381e"}</msg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-12-29T21:08:40.210982" elapsed="2.384748"/>
+<status status="PASS" start="2024-12-29T22:34:45.678393" elapsed="2.998007"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-12-29T21:08:44.247520" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
-<msg time="2024-12-29T21:08:44.247620" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-12-29T22:34:50.300489" level="INFO">Successfully initialized new page object and opened url: https://www.bitfinex.com/</msg>
+<msg time="2024-12-29T22:34:50.300596" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${site_url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-12-29T21:08:42.596108" elapsed="1.651722"/>
+<status status="PASS" start="2024-12-29T22:34:48.676798" elapsed="1.624039"/>
 </kw>
-<status status="PASS" start="2024-12-29T21:08:40.209926" elapsed="4.038091"/>
+<status status="PASS" start="2024-12-29T22:34:45.677556" elapsed="4.623484"/>
 </kw>
 <kw name="Hover TradersTab" owner="Home">
 <kw name="Hover" owner="Browser">
@@ -31,24 +31,24 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:44.248983" elapsed="1.269869"/>
+<status status="PASS" start="2024-12-29T22:34:50.302080" elapsed="1.538641"/>
 </kw>
-<status status="PASS" start="2024-12-29T21:08:44.248433" elapsed="1.270611"/>
+<status status="PASS" start="2024-12-29T22:34:50.301441" elapsed="1.539507"/>
 </kw>
 <kw name="Get Elements" owner="Browser">
-<msg time="2024-12-29T21:08:45.536086" level="INFO">Found locator('//div[contains(@class, \'header_popover_menu\')]//a').first(),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(1),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(2),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(3),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(4),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(5),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(6),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(7),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(8),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(9),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(10),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(11),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(12),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(13) Locators successfully.</msg>
-<msg time="2024-12-29T21:08:45.536533" level="INFO">${sub_tab_elements} = ["xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=0", "xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=1", "xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth...</msg>
+<msg time="2024-12-29T22:34:51.856040" level="INFO">Found locator('//div[contains(@class, \'header_popover_menu\')]//a').first(),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(1),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(2),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(3),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(4),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(5),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(6),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(7),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(8),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(9),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(10),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(11),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(12),locator('//div[contains(@class, \'header_popover_menu\')]//a').nth(13) Locators successfully.</msg>
+<msg time="2024-12-29T22:34:51.856438" level="INFO">${sub_tab_elements} = ["xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=0", "xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=1", "xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth...</msg>
 <var>${sub_tab_elements}</var>
 <arg>${traders_sub_tab}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
 for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.519326" elapsed="0.017283"/>
+<status status="PASS" start="2024-12-29T22:34:51.841252" elapsed="0.015244"/>
 </kw>
 <kw name="Click And Validate Each Sub-Tab" owner="Home">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.538436" level="INFO">${my_list} = ['Features', 'Mobile app', 'P2P Trading', 'Market statistics', 'Corporate &amp; professional', 'Our fees', 'Security', 'API documentation', 'Bitfinex Leaderboard', 'Competitions', 'Deposits &amp; Withdrawals'...</msg>
+<msg time="2024-12-29T22:34:51.858408" level="INFO">${my_list} = ['Features', 'Mobile app', 'P2P Trading', 'Market statistics', 'Corporate &amp; professional', 'Our fees', 'Security', 'API documentation', 'Bitfinex Leaderboard', 'Competitions', 'Deposits &amp; Withdrawals'...</msg>
 <var>${my_list}</var>
 <arg>Features</arg>
 <arg>Mobile app</arg>
@@ -65,457 +65,772 @@ for all matched elements by ``selector``.</doc>
 <arg>Thalex Derivatives</arg>
 <arg>Reporting Tool</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.537989" elapsed="0.000505"/>
+<status status="PASS" start="2024-12-29T22:34:51.857987" elapsed="0.000477"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-29T22:34:51.859042" level="INFO">${counter} = 0</msg>
+<var>${counter}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-29T22:34:51.858741" elapsed="0.000349"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-12-29T22:34:51.859555" level="INFO">${results} = []</msg>
+<var>${results}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-12-29T22:34:51.859281" elapsed="0.000320"/>
 </kw>
 <for flavor="IN">
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.576842" level="INFO">Text: 'Features'</msg>
-<msg time="2024-12-29T21:08:45.577088" level="INFO">${tab_name} = Features</msg>
+<msg time="2024-12-29T22:34:51.896013" level="INFO">Text: 'Features'</msg>
+<msg time="2024-12-29T22:34:51.896261" level="INFO">${tab_name} = Features</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.539321" elapsed="0.037819"/>
+<status status="PASS" start="2024-12-29T22:34:51.860623" elapsed="0.035687"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.577974" level="INFO">${item_name} = Features</msg>
+<msg time="2024-12-29T22:34:51.897082" level="INFO">${item_name} = Features</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.577430" elapsed="0.000607"/>
+<status status="PASS" start="2024-12-29T22:34:51.896598" elapsed="0.000534"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.578287" elapsed="0.000463"/>
+<status status="PASS" start="2024-12-29T22:34:51.897362" elapsed="0.000457"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:51.860380" elapsed="0.037538"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:51.898263" elapsed="0.000105"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:51.898032" elapsed="0.000425"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:51.860313" elapsed="0.038221"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.579389" level="INFO">${counter} = 1</msg>
+<msg time="2024-12-29T22:34:51.899108" level="INFO">${counter} = 1</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.578961" elapsed="0.000480"/>
+<status status="PASS" start="2024-12-29T22:34:51.898690" elapsed="0.000467"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=0</var>
-<status status="PASS" start="2024-12-29T21:08:45.539057" elapsed="0.040476"/>
+<status status="PASS" start="2024-12-29T22:34:51.860161" elapsed="0.039086"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.595707" level="INFO">Text: 'Mobile app'</msg>
-<msg time="2024-12-29T21:08:45.595946" level="INFO">${tab_name} = Mobile app</msg>
+<msg time="2024-12-29T22:34:51.914680" level="INFO">Text: 'Mobile app'</msg>
+<msg time="2024-12-29T22:34:51.914915" level="INFO">${tab_name} = Mobile app</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.579980" elapsed="0.016015"/>
+<status status="PASS" start="2024-12-29T22:34:51.899926" elapsed="0.015093"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.596780" level="INFO">${item_name} = Mobile app</msg>
+<msg time="2024-12-29T22:34:51.915889" level="INFO">${item_name} = Mobile app</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.596298" elapsed="0.000531"/>
+<status status="PASS" start="2024-12-29T22:34:51.915368" elapsed="0.000572"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.597041" elapsed="0.000403"/>
+<status status="PASS" start="2024-12-29T22:34:51.916168" elapsed="0.000426"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:51.899709" elapsed="0.016987"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:51.917081" elapsed="0.000169"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:51.916811" elapsed="0.000543"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:51.899666" elapsed="0.017783"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.598062" level="INFO">${counter} = 2</msg>
+<msg time="2024-12-29T22:34:51.918077" level="INFO">${counter} = 2</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.597640" elapsed="0.000471"/>
+<status status="PASS" start="2024-12-29T22:34:51.917629" elapsed="0.000499"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=1</var>
-<status status="PASS" start="2024-12-29T21:08:45.579750" elapsed="0.018576"/>
+<status status="PASS" start="2024-12-29T22:34:51.899538" elapsed="0.018740"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.613951" level="INFO">Text: 'P2P Trading'</msg>
-<msg time="2024-12-29T21:08:45.614170" level="INFO">${tab_name} = P2P Trading</msg>
+<msg time="2024-12-29T22:34:51.933863" level="INFO">Text: 'P2P Trading'</msg>
+<msg time="2024-12-29T22:34:51.934085" level="INFO">${tab_name} = P2P Trading</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.599007" elapsed="0.015212"/>
+<status status="PASS" start="2024-12-29T22:34:51.919068" elapsed="0.015070"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.615007" level="INFO">${item_name} = P2P Trading</msg>
+<msg time="2024-12-29T22:34:51.934930" level="INFO">${item_name} = P2P Trading</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.614512" elapsed="0.000543"/>
+<status status="PASS" start="2024-12-29T22:34:51.934445" elapsed="0.000534"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.615265" elapsed="0.000413"/>
+<status status="PASS" start="2024-12-29T22:34:51.935278" elapsed="0.000502"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:51.918838" elapsed="0.017047"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:51.936230" elapsed="0.000106"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:51.935992" elapsed="0.000432"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:51.918790" elapsed="0.017710"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.616366" level="INFO">${counter} = 3</msg>
+<msg time="2024-12-29T22:34:51.937061" level="INFO">${counter} = 3</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.615882" elapsed="0.000562"/>
+<status status="PASS" start="2024-12-29T22:34:51.936647" elapsed="0.000463"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=2</var>
-<status status="PASS" start="2024-12-29T21:08:45.598619" elapsed="0.017946"/>
+<status status="PASS" start="2024-12-29T22:34:51.918634" elapsed="0.018571"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.632320" level="INFO">Text: 'Market statistics'</msg>
-<msg time="2024-12-29T21:08:45.632554" level="INFO">${tab_name} = Market statistics</msg>
+<msg time="2024-12-29T22:34:51.953862" level="INFO">Text: 'Market statistics'</msg>
+<msg time="2024-12-29T22:34:51.954072" level="INFO">${tab_name} = Market statistics</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.617344" elapsed="0.015260"/>
+<status status="PASS" start="2024-12-29T22:34:51.937865" elapsed="0.016257"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.633838" level="INFO">${item_name} = Market statistics</msg>
+<msg time="2024-12-29T22:34:51.954871" level="INFO">${item_name} = Market statistics</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.632985" elapsed="0.001023"/>
+<status status="PASS" start="2024-12-29T22:34:51.954406" elapsed="0.000512"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.634398" elapsed="0.000733"/>
+<status status="PASS" start="2024-12-29T22:34:51.955122" elapsed="0.000400"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:51.937653" elapsed="0.017965"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:51.955938" elapsed="0.000108"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:51.955720" elapsed="0.000417"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:51.937609" elapsed="0.018616"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.635862" level="INFO">${counter} = 4</msg>
+<msg time="2024-12-29T22:34:51.956778" level="INFO">${counter} = 4</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.635396" elapsed="0.000521"/>
+<status status="PASS" start="2024-12-29T22:34:51.956375" elapsed="0.000451"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=3</var>
-<status status="PASS" start="2024-12-29T21:08:45.616851" elapsed="0.019163"/>
+<status status="PASS" start="2024-12-29T22:34:51.937480" elapsed="0.019436"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.653541" level="INFO">Text: 'Corporate &amp; professional'</msg>
-<msg time="2024-12-29T21:08:45.653820" level="INFO">${tab_name} = Corporate &amp; professional</msg>
+<msg time="2024-12-29T22:34:51.979252" level="INFO">Text: 'Corporate &amp; professional'</msg>
+<msg time="2024-12-29T22:34:51.979468" level="INFO">${tab_name} = Corporate &amp; professional</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.636588" elapsed="0.017292"/>
+<status status="PASS" start="2024-12-29T22:34:51.957581" elapsed="0.021939"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.654692" level="INFO">${item_name} = Corporate &amp; professional</msg>
+<msg time="2024-12-29T22:34:51.980442" level="INFO">${item_name} = Corporate &amp; professional</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.654200" elapsed="0.000545"/>
+<status status="PASS" start="2024-12-29T22:34:51.979877" elapsed="0.000615"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.654962" elapsed="0.000428"/>
+<status status="PASS" start="2024-12-29T22:34:51.980712" elapsed="0.000409"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:51.957369" elapsed="0.023855"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:51.981546" elapsed="0.000108"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:51.981329" elapsed="0.000414"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:51.957324" elapsed="0.024497"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.656013" level="INFO">${counter} = 5</msg>
+<msg time="2024-12-29T22:34:51.982460" level="INFO">${counter} = 5</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.655611" elapsed="0.000449"/>
+<status status="PASS" start="2024-12-29T22:34:51.982013" elapsed="0.000498"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=4</var>
-<status status="PASS" start="2024-12-29T21:08:45.636321" elapsed="0.019830"/>
+<status status="PASS" start="2024-12-29T22:34:51.957193" elapsed="0.025534"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.671861" level="INFO">Text: 'Our fees'</msg>
-<msg time="2024-12-29T21:08:45.672167" level="INFO">${tab_name} = Our fees</msg>
+<msg time="2024-12-29T22:34:51.996261" level="INFO">Text: 'Our fees'</msg>
+<msg time="2024-12-29T22:34:51.996477" level="INFO">${tab_name} = Our fees</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.656598" elapsed="0.015696"/>
+<status status="PASS" start="2024-12-29T22:34:51.983467" elapsed="0.013059"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.673577" level="INFO">${item_name} = Our fees</msg>
+<msg time="2024-12-29T22:34:51.997271" level="INFO">${item_name} = Our fees</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.672784" elapsed="0.000874"/>
+<status status="PASS" start="2024-12-29T22:34:51.996807" elapsed="0.000511"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.673971" elapsed="0.000668"/>
+<status status="PASS" start="2024-12-29T22:34:51.997522" elapsed="0.000509"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:51.983239" elapsed="0.014903"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:51.998496" elapsed="0.000111"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:51.998254" elapsed="0.000444"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:51.983192" elapsed="0.015587"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.675603" level="INFO">${counter} = 6</msg>
+<msg time="2024-12-29T22:34:51.999357" level="INFO">${counter} = 6</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.674955" elapsed="0.000705"/>
+<status status="PASS" start="2024-12-29T22:34:51.998936" elapsed="0.000472"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=5</var>
-<status status="PASS" start="2024-12-29T21:08:45.656371" elapsed="0.019393"/>
+<status status="PASS" start="2024-12-29T22:34:51.983044" elapsed="0.016456"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.697115" level="INFO">Text: 'Security'</msg>
-<msg time="2024-12-29T21:08:45.697432" level="INFO">${tab_name} = Security</msg>
+<msg time="2024-12-29T22:34:52.012851" level="INFO">Text: 'Security'</msg>
+<msg time="2024-12-29T22:34:52.013073" level="INFO">${tab_name} = Security</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.676253" elapsed="0.021256"/>
+<status status="PASS" start="2024-12-29T22:34:52.000198" elapsed="0.012924"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.698641" level="INFO">${item_name} = Security</msg>
+<msg time="2024-12-29T22:34:52.013876" level="INFO">${item_name} = Security</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.697985" elapsed="0.000711"/>
+<status status="PASS" start="2024-12-29T22:34:52.013407" elapsed="0.000516"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.698983" elapsed="0.000572"/>
+<status status="PASS" start="2024-12-29T22:34:52.014123" elapsed="0.000483"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:51.999969" elapsed="0.014773"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:52.015128" elapsed="0.000112"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:52.014881" elapsed="0.000453"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:51.999921" elapsed="0.015491"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.700926" level="INFO">${counter} = 7</msg>
+<msg time="2024-12-29T22:34:52.016000" level="INFO">${counter} = 7</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.699923" elapsed="0.001097"/>
+<status status="PASS" start="2024-12-29T22:34:52.015563" elapsed="0.000488"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=6</var>
-<status status="PASS" start="2024-12-29T21:08:45.675973" elapsed="0.025203"/>
+<status status="PASS" start="2024-12-29T22:34:51.999782" elapsed="0.016362"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.721733" level="INFO">Text: 'API documentation'</msg>
-<msg time="2024-12-29T21:08:45.722174" level="INFO">${tab_name} = API documentation</msg>
+<msg time="2024-12-29T22:34:52.029993" level="INFO">Text: 'API documentation'</msg>
+<msg time="2024-12-29T22:34:52.030206" level="INFO">${tab_name} = API documentation</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.702105" elapsed="0.020142"/>
+<status status="PASS" start="2024-12-29T22:34:52.016866" elapsed="0.013388"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.723823" level="INFO">${item_name} = API documentation</msg>
+<msg time="2024-12-29T22:34:52.031176" level="INFO">${item_name} = API documentation</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.722754" elapsed="0.001166"/>
+<status status="PASS" start="2024-12-29T22:34:52.030538" elapsed="0.000739"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.724396" elapsed="0.001111"/>
+<status status="PASS" start="2024-12-29T22:34:52.031537" elapsed="0.000484"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:52.016618" elapsed="0.015505"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:52.032479" elapsed="0.000115"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:52.032232" elapsed="0.000477"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:52.016570" elapsed="0.016223"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.726829" level="INFO">${counter} = 8</msg>
+<msg time="2024-12-29T22:34:52.033555" level="INFO">${counter} = 8</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.725942" elapsed="0.001014"/>
+<status status="PASS" start="2024-12-29T22:34:52.032955" elapsed="0.000698"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=7</var>
-<status status="PASS" start="2024-12-29T21:08:45.701495" elapsed="0.025668"/>
+<status status="PASS" start="2024-12-29T22:34:52.016425" elapsed="0.017347"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.746935" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
-<msg time="2024-12-29T21:08:45.747177" level="INFO">${tab_name} = Bitfinex Leaderboard</msg>
+<msg time="2024-12-29T22:34:52.047422" level="INFO">Text: 'Bitfinex Leaderboard'</msg>
+<msg time="2024-12-29T22:34:52.047641" level="INFO">${tab_name} = Bitfinex Leaderboard</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.727967" elapsed="0.019263"/>
+<status status="PASS" start="2024-12-29T22:34:52.034519" elapsed="0.013171"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.748024" level="INFO">${item_name} = Bitfinex Leaderboard</msg>
+<msg time="2024-12-29T22:34:52.048536" level="INFO">${item_name} = Bitfinex Leaderboard</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.747532" elapsed="0.000541"/>
+<status status="PASS" start="2024-12-29T22:34:52.048013" elapsed="0.000573"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.748284" elapsed="0.000472"/>
+<status status="PASS" start="2024-12-29T22:34:52.048806" elapsed="0.000407"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:52.034282" elapsed="0.015027"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:52.049642" elapsed="0.000110"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:52.049414" elapsed="0.000430"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:52.034234" elapsed="0.015768"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.749460" level="INFO">${counter} = 9</msg>
+<msg time="2024-12-29T22:34:52.050735" level="INFO">${counter} = 9</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.749007" elapsed="0.000506"/>
+<status status="PASS" start="2024-12-29T22:34:52.050170" elapsed="0.000637"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=8</var>
-<status status="PASS" start="2024-12-29T21:08:45.727542" elapsed="0.022113"/>
+<status status="PASS" start="2024-12-29T22:34:52.034069" elapsed="0.016851"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.766887" level="INFO">Text: 'Competitions'</msg>
-<msg time="2024-12-29T21:08:45.767224" level="INFO">${tab_name} = Competitions</msg>
+<msg time="2024-12-29T22:34:52.066060" level="INFO">Text: 'Competitions'</msg>
+<msg time="2024-12-29T22:34:52.066274" level="INFO">${tab_name} = Competitions</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.750700" elapsed="0.016637"/>
+<status status="PASS" start="2024-12-29T22:34:52.051667" elapsed="0.014656"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.768652" level="INFO">${item_name} = Competitions</msg>
+<msg time="2024-12-29T22:34:52.067122" level="INFO">${item_name} = Competitions</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.767745" elapsed="0.001000"/>
+<status status="PASS" start="2024-12-29T22:34:52.066617" elapsed="0.000555"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.769023" elapsed="0.000750"/>
+<status status="PASS" start="2024-12-29T22:34:52.067393" elapsed="0.000409"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:52.051424" elapsed="0.016472"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:52.068221" elapsed="0.000105"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:52.068001" elapsed="0.000413"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:52.051375" elapsed="0.017115"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.770582" level="INFO">${counter} = 10</msg>
+<msg time="2024-12-29T22:34:52.069264" level="INFO">${counter} = 10</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.770058" elapsed="0.000579"/>
+<status status="PASS" start="2024-12-29T22:34:52.068637" elapsed="0.000683"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=9</var>
-<status status="PASS" start="2024-12-29T21:08:45.750025" elapsed="0.020715"/>
+<status status="PASS" start="2024-12-29T22:34:52.051216" elapsed="0.018208"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.784478" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
-<msg time="2024-12-29T21:08:45.784705" level="INFO">${tab_name} = Deposits &amp; Withdrawals</msg>
+<msg time="2024-12-29T22:34:52.083374" level="INFO">Text: 'Deposits &amp; Withdrawals'</msg>
+<msg time="2024-12-29T22:34:52.083596" level="INFO">${tab_name} = Deposits &amp; Withdrawals</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.771212" elapsed="0.013557"/>
+<status status="PASS" start="2024-12-29T22:34:52.070123" elapsed="0.013526"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.785774" level="INFO">${item_name} = Deposits &amp; Withdrawals</msg>
+<msg time="2024-12-29T22:34:52.084415" level="INFO">${item_name} = Deposits &amp; Withdrawals</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.785060" elapsed="0.000794"/>
+<status status="PASS" start="2024-12-29T22:34:52.083931" elapsed="0.000534"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.786184" elapsed="0.000526"/>
+<status status="PASS" start="2024-12-29T22:34:52.084667" elapsed="0.000402"/>
 </kw>
+<status status="PASS" start="2024-12-29T22:34:52.069899" elapsed="0.015265"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:52.085481" elapsed="0.000108"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:52.085268" elapsed="0.000412"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:52.069854" elapsed="0.015904"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.787368" level="INFO">${counter} = 11</msg>
+<msg time="2024-12-29T22:34:52.086300" level="INFO">${counter} = 11</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.786940" elapsed="0.000480"/>
+<status status="PASS" start="2024-12-29T22:34:52.085904" elapsed="0.000445"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=10</var>
-<status status="PASS" start="2024-12-29T21:08:45.770951" elapsed="0.016564"/>
+<status status="PASS" start="2024-12-29T22:34:52.069708" elapsed="0.016733"/>
 </iter>
 <iter>
+<try>
+<branch type="TRY">
 <kw name="Get Text" owner="Browser">
-<msg time="2024-12-29T21:08:45.801313" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
-<msg time="2024-12-29T21:08:45.801538" level="INFO">${tab_name} = Debit/Credit On-ramp</msg>
+<msg time="2024-12-29T22:34:52.100269" level="INFO">Text: 'Debit/Credit On-ramp'</msg>
+<msg time="2024-12-29T22:34:52.100483" level="INFO">${tab_name} = Debit/Credit On-ramp</msg>
 <var>${tab_name}</var>
 <arg>${element}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.787951" elapsed="0.013639"/>
+<status status="PASS" start="2024-12-29T22:34:52.087121" elapsed="0.013412"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-12-29T21:08:45.802756" level="INFO">${item_name} = Payment Cards</msg>
+<msg time="2024-12-29T22:34:52.101280" level="INFO">${item_name} = Payment Cards</msg>
 <var>${item_name}</var>
 <arg>${my_list}</arg>
 <arg>${counter}</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-12-29T21:08:45.802021" elapsed="0.000797"/>
+<status status="PASS" start="2024-12-29T22:34:52.100816" elapsed="0.000512"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2024-12-29T21:08:45.803617" level="FAIL">Debit/Credit On-ramp != Payment Cards</msg>
+<msg time="2024-12-29T22:34:52.102008" level="FAIL">Debit/Credit On-ramp != Payment Cards</msg>
 <arg>${tab_name}</arg>
 <arg>${item_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="FAIL" start="2024-12-29T21:08:45.803078" elapsed="0.000663">Debit/Credit On-ramp != Payment Cards</status>
+<status status="FAIL" start="2024-12-29T22:34:52.101531" elapsed="0.000595">Debit/Credit On-ramp != Payment Cards</status>
 </kw>
+<status status="FAIL" start="2024-12-29T22:34:52.086904" elapsed="0.015361">Debit/Credit On-ramp != Payment Cards</status>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.102595" elapsed="0.000465"/>
+</kw>
+<status status="PASS" start="2024-12-29T22:34:52.102377" elapsed="0.000781"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:52.086855" elapsed="0.016385"/>
+</try>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-29T22:34:52.103777" level="INFO">${counter} = 12</msg>
 <var>${counter}</var>
 <arg>${counter} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2024-12-29T21:08:45.803976" elapsed="0.000123"/>
+<status status="PASS" start="2024-12-29T22:34:52.103385" elapsed="0.000440"/>
 </kw>
 <var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=11</var>
-<status status="FAIL" start="2024-12-29T21:08:45.787715" elapsed="0.016516">Debit/Credit On-ramp != Payment Cards</status>
+<status status="PASS" start="2024-12-29T22:34:52.086718" elapsed="0.017197"/>
+</iter>
+<iter>
+<try>
+<branch type="TRY">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-29T22:34:52.119018" level="INFO">Text: 'Thalex Derivatives'</msg>
+<msg time="2024-12-29T22:34:52.119248" level="INFO">${tab_name} = Thalex Derivatives</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.104571" elapsed="0.014727"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-12-29T22:34:52.120058" level="INFO">${item_name} = Thalex Derivatives</msg>
+<var>${item_name}</var>
+<arg>${my_list}</arg>
+<arg>${counter}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.119580" elapsed="0.000526"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${tab_name}</arg>
+<arg>${item_name}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.120308" elapsed="0.000494"/>
+</kw>
+<status status="PASS" start="2024-12-29T22:34:52.104356" elapsed="0.016543"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:52.121220" elapsed="0.000107"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:52.121006" elapsed="0.000412"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:52.104313" elapsed="0.017183"/>
+</try>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-29T22:34:52.122043" level="INFO">${counter} = 13</msg>
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.121643" elapsed="0.000450"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=12</var>
+<status status="PASS" start="2024-12-29T22:34:52.104184" elapsed="0.018001"/>
+</iter>
+<iter>
+<try>
+<branch type="TRY">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-29T22:34:52.137478" level="INFO">Text: 'Reporting Tool'</msg>
+<msg time="2024-12-29T22:34:52.137685" level="INFO">${tab_name} = Reporting Tool</msg>
+<var>${tab_name}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.122858" elapsed="0.014879"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-12-29T22:34:52.138514" level="INFO">${item_name} = Reporting Tool</msg>
+<var>${item_name}</var>
+<arg>${my_list}</arg>
+<arg>${counter}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.138020" elapsed="0.000543"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${tab_name}</arg>
+<arg>${item_name}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.138771" elapsed="0.000404"/>
+</kw>
+<status status="PASS" start="2024-12-29T22:34:52.122641" elapsed="0.016645"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Append To List" owner="Collections">
+<arg>${results}</arg>
+<arg>FAIL: ${tab_name} != ${item_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-12-29T22:34:52.139612" elapsed="0.000107"/>
+</kw>
+<status status="NOT RUN" start="2024-12-29T22:34:52.139394" elapsed="0.000415"/>
+</branch>
+<status status="PASS" start="2024-12-29T22:34:52.122595" elapsed="0.017292"/>
+</try>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-29T22:34:52.140432" level="INFO">${counter} = 14</msg>
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.140034" elapsed="0.000454"/>
+</kw>
+<var name="${element}">xpath=//div[contains(@class, 'header_popover_menu')]//a &gt;&gt; nth=13</var>
+<status status="PASS" start="2024-12-29T22:34:52.122459" elapsed="0.018120"/>
 </iter>
 <var>${element}</var>
 <value>@{sub_tab_elements}</value>
-<status status="FAIL" start="2024-12-29T21:08:45.538702" elapsed="0.266183">Debit/Credit On-ramp != Payment Cards</status>
+<status status="PASS" start="2024-12-29T22:34:51.859724" elapsed="0.280939"/>
 </for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-29T22:34:52.141158" level="INFO">Final Results: ['FAIL: Debit/Credit On-ramp != Payment Cards']</msg>
+<arg>Final Results: ${results}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-29T22:34:52.140861" elapsed="0.000379"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Fail" owner="BuiltIn">
+<msg time="2024-12-29T22:34:52.142208" level="FAIL">Final FAIL Results: ['FAIL: Debit/Credit On-ramp != Payment Cards']</msg>
+<arg>Final FAIL Results: ${results}</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="FAIL" start="2024-12-29T22:34:52.141814" elapsed="0.000504">Final FAIL Results: ['FAIL: Debit/Credit On-ramp != Payment Cards']</status>
+</kw>
+<arg>${results}</arg>
+<arg>Fail</arg>
+<arg>Final FAIL Results: ${results}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="FAIL" start="2024-12-29T22:34:52.141445" elapsed="0.000979">Final FAIL Results: ['FAIL: Debit/Credit On-ramp != Payment Cards']</status>
+</kw>
 <arg>${sub_tab_elements}</arg>
-<status status="FAIL" start="2024-12-29T21:08:45.537188" elapsed="0.268024">Debit/Credit On-ramp != Payment Cards</status>
+<status status="FAIL" start="2024-12-29T22:34:51.857271" elapsed="0.285348">Final FAIL Results: ['FAIL: Debit/Credit On-ramp != Payment Cards']</status>
 </kw>
 <kw name="Close Browser" owner="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-12-29T21:08:45.806057" elapsed="0.000226"/>
+<status status="NOT RUN" start="2024-12-29T22:34:52.142896" elapsed="0.000132"/>
 </kw>
-<status status="FAIL" start="2024-12-29T21:08:40.209155" elapsed="5.597490">Debit/Credit On-ramp != Payment Cards</status>
+<status status="FAIL" start="2024-12-29T22:34:45.676863" elapsed="6.466534">Final FAIL Results: ['FAIL: Debit/Credit On-ramp != Payment Cards']</status>
 </test>
-<status status="FAIL" start="2024-12-29T21:08:40.004396" elapsed="5.884250"/>
+<status status="FAIL" start="2024-12-29T22:34:45.411718" elapsed="6.800877"/>
 </suite>
 <statistics>
 <total>

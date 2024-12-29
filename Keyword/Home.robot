@@ -12,13 +12,10 @@ ${traders_tab}  xpath=//span[@class='header_item-title'][normalize-space()='Trad
 # Traders sub tab element
 ${traders_sub_tab}  xpath=//div[contains(@class, 'header_popover_menu')]//a
 
-# Declare my_list as variable does not work, it thinks my_list is a string instead of a list, why?
-#${my_list}    Create List    Features    Mobile app    P2P Trading    Market statistics    Corporate & professional    Our fees    Security    API documentation    Bitfinex Leaderboard    Competitions    Deposits & Withdrawals    Debit/Credit On-ramp    Thalex Derivatives    Reporting Tool    Debit/Credit On-ramp
 
 ${counter}    0
 
 *** Keywords ***
-
 
 Open Browser 2
   New Browser   headless=False
@@ -29,18 +26,27 @@ Hover TradersTab
 
 Click And Validate Each Sub-Tab
     [Arguments]    ${sub_tab_elements}
-    
+
     ${my_list}=          Create List      Features    Mobile app    P2P Trading    Market statistics    Corporate & professional    Our fees    Security    API documentation    Bitfinex Leaderboard    Competitions    Deposits & Withdrawals    Payment Cards    Thalex Derivatives    Reporting Tool
-    # Log    ${my_list}
 
-    # Loop through sub-tabs and check visibility
+    ${counter}=          Set Variable    0
+    # Initialize result list
+    ${results}=          Create List
+
     FOR    ${element}    IN    @{sub_tab_elements}                
-        ${tab_name}=    Get Text    ${element}
-        ${item_name}=    Get From List    ${my_list}    ${counter}
-        # Log    Element name: ${tab_name}
-        # Log    Element name: ${item_name}
-        Should Be Equal    ${tab_name}    ${item_name}
-
+        TRY
+            ${tab_name}=    Get Text    ${element}
+            ${item_name}=    Get From List    ${my_list}    ${counter}
+            Should Be Equal    ${tab_name}    ${item_name}
+            # Log    PASS: ${tab_name}
+        EXCEPT
+            # Log    FAIL: ${tab_name} != ${item_name}
+            Append To List    ${results}    FAIL: ${tab_name} != ${item_name}
+        END
         ${counter}=    Evaluate    ${counter} + 1
-        
     END
+
+    # Log the final results - FAIL only
+    Log    Final Results: ${results}
+    # Kiểm tra nếu có bất kỳ lỗi nào trong ${results}
+    Run Keyword If    ${results}    Fail    Final FAIL Results: ${results}
