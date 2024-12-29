@@ -7,7 +7,7 @@ Resource  ../../automation/Keyword/Home.robot
 
 Test1
     
-    Open Browser
+    Open Browser 2
     Hover TradersTab
     
     ${sub_tab_elements}=    Get Elements    ${traders_sub_tab}
