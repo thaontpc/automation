@@ -10,6 +10,8 @@ ${site_url}    https://www.bitfinex.com/
 # locator cho các sub-tab
 ${sub_menu_locator}    xpath=//div[contains(@class, 'header_popover_menu')]//a
 
+# ${sub_menu_locator}    xpath=//div[@class='header_popover_menu']
+
 # Template cho menu locators
 ${menu_locator_template}    xpath=//span[@class='header_item-title'][normalize-space()='{}']
 
@@ -17,7 +19,7 @@ ${counter}    0
 
 *** Keywords ***
 
-Open Browser
+Open New Browser
   New Browser   headless=False
   New Page    ${site_url}    
 
@@ -45,7 +47,7 @@ Click And Validate Each Sub-Tab
 
 Check Sub-menu under Menu
     [Arguments]    ${menu_name}    ${expected_list}
-    
+
     ${menu_locator}=    Replace String    ${menu_locator_template}    {}    ${menu_name}
     Hover    ${menu_locator}
     Click And Validate Each Sub-Tab    ${sub_menu_locator}    ${expected_list}
