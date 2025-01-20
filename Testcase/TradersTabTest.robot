@@ -25,10 +25,10 @@ Test1
     Close Browser
 
 
-Test 9
+Test2
     Open New Browser
     # Check Trader Tab
-    @{link_menu_name_list}    Create List    API documentation    P2P Trading    Bitfinex Leaderboard    Reporting Tool
+    @{link_menu_name_list}    Create List    P2P Trading    API documentation    Bitfinex Leaderboard    Reporting Tool
     Check Link Under Menu    Traders    @{link_menu_name_list}
 
     Sleep    2 seconds
@@ -38,6 +38,6 @@ Test 9
 
     Sleep    2 seconds
     # Check About Tab
-    @{link_menu_name_list}    Create List    Blog    Status page
+    @{link_menu_name_list}    Create List    Blog    Newsletter    Status page
     Check Link Under Menu    About    @{link_menu_name_list}
     Close Browser

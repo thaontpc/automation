@@ -21,20 +21,21 @@ Open New Browser
   New Browser   headless=False
   New Page    ${site_url}    
 
+# Check name of sub-menu under menu
 Click And Validate Each Sub-Tab
-    [Arguments]    ${traders_sub_tab}    ${expected_list}
+    [Arguments]    ${sub_menu_locator}    ${expected_sub_menu_name_list}
 
     ${counter}=          Set Variable    0
     ${results}=          Create List
-    ${sub_tab_elements}=    Get Elements    ${traders_sub_tab}
+    ${sub_menu_elements}=    Get Elements    ${sub_menu_locator}
 
-    FOR    ${element}    IN    @{sub_tab_elements}
+    FOR    ${element}    IN    @{sub_menu_elements}
         TRY
-            ${tab_name}=    Get Text    ${element}
-            ${item_name}=    Get From List    ${expected_list}    ${counter}
-            Should Be Equal    ${tab_name}    ${item_name}
+            ${sub_menu_name}=    Get Text    ${element}
+            ${item_name}=    Get From List    ${expected_sub_menu_name_list}    ${counter}
+            Should Be Equal    ${sub_menu_name}    ${item_name}
         EXCEPT
-            Append To List    ${results}    FAIL: ${tab_name} != ${item_name}
+            Append To List    ${results}    FAIL: ${sub_menu_name} != ${item_name}
         END
         ${counter}=    Evaluate    ${counter} + 1
     END
@@ -44,27 +45,40 @@ Click And Validate Each Sub-Tab
     Run Keyword If    ${results}    Fail    Final FAIL Results: ${results}
 
 Check Sub-menu under Menu
-    [Arguments]    ${menu_name}    ${expected_list}
+    [Arguments]    ${menu_name}    ${expected_sub_menu_name_list}
 
     ${menu_locator}=    Replace String    ${menu_locator_template}    {}    ${menu_name}
     Hover    ${menu_locator}
-    Click And Validate Each Sub-Tab    ${sub_menu_locator}    ${expected_list}
+    Click And Validate Each Sub-Tab    ${sub_menu_locator}    ${expected_sub_menu_name_list}
 
+# Check link under menu
 Check Link Under Menu
-    [Arguments]    ${menu_name}    @{traders_sub_tab}
-    FOR    ${element}    IN    @{traders_sub_tab}
+    [Arguments]    ${menu_name}    @{sub_menu_link_name}
+    ${missing_elements}=    Create List
+    FOR    ${element}    IN    @{sub_menu_link_name}
         ${menu_locator}=    Replace String    ${menu_locator_template}    {}    ${menu_name}
         Hover    ${menu_locator}
         ${link_menu_locator}=    Replace String    ${link_menu_xpath_template}    {}    ${element}
-        Click With Options    ${link_menu_locator}    force=True
-        Wait For Load State
-        Switch Page      NEW
-        Sleep    2 seconds
-        ${new_url}=    Get URL
-        Log     ${new_url}
-        Should Not Be Equal    ${new_url}    ${site_url}
-        Close Page
-        Sleep    2 seconds
+
+        ${element_exists}=    Run Keyword And Return Status    Get Element    ${link_menu_locator}    # timeout=2s
+        IF    ${element_exists}
+            Click With Options    ${link_menu_locator}    force=True
+            Wait For Load State
+            Switch Page      NEW
+            Sleep    2 seconds
+            ${new_url}=    Get URL
+            Log     ${new_url}
+            Should Not Be Equal    ${new_url}    ${site_url}
+            Close Page
+            Sleep    2 seconds
+        ELSE
+            Append To List    ${missing_elements}    ${element} 
+        END
     END
+    
+    IF    ${missing_elements}
+        Fail    Elements were not found '${menu_name}': ${missing_elements}
+    END
+
 
 
